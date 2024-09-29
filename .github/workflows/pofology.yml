@@ -30,9 +30,6 @@ jobs:
       - name: Pofology Build
         run: yarn build
         working-directory: ./pofology
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: peaceiris/actions-gh-pages@v3
 
   # Deployment job
   deploy:
