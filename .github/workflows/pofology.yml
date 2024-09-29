@@ -15,10 +15,9 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    permissions:
-      id-token: write
+
     steps:
       - uses: actions/checkout@v3
       - name: Check build using Node.js ${{ matrix.node-version }}
@@ -31,7 +30,20 @@ jobs:
       - name: Pofology Build
         run: yarn build
         working-directory: ./pofology
+
+  # Deployment job
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    strategy:
+      matrix:
+        node-version: [20.x]
+    needs: build
+    permissions:
+      id-token: write
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/setup-node@v3
-      
