@@ -33,5 +33,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}  # Reference your PAT secret here
-          publish_dir: ./pofology/dist 
+          github_token: ${{ secrets.GH_TOKEN }}  # Ensure this matches the secret name
+          publish_dir: ./pofology/dist            # Path to the build output directory
+          publish_branch: gh-pages   
