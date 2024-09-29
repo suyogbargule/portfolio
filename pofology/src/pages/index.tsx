@@ -6,7 +6,6 @@ import HeroSection from '@/components/partials/HeroSection';
 import RecentWorkSection from '@/components/partials/RecentWorkSection';
 import ServiceSection from '@/components/partials/ServiceSection';
 import TestimonialSection from '@/components/partials/TestimonialSection';
-import RecentSkillSection from '@/components/partials/RecentSkillSection';
 import AppLayout from '@/layouts/AppLayout';
 import { api } from '@/lib/api';
 import type { GetServerSideProps, NextPage } from 'next';
@@ -32,7 +31,10 @@ const Home: NextPage = () => {
         <RecentWorkSection />
       </section>
       <section className="container py-16">
-        <RecentSkillSection />
+        <TestimonialSection />
+      </section>
+      <section className="container py-16">
+        <BlogSection />
       </section>
       <section className="container py-16">
         <ContactSection />

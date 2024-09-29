@@ -33,6 +33,24 @@ const Contact = (props: Props) => {
               <p>mostafizurhimself@gmail.com</p>
             </div>
           </div>
+          <div className="col-span-2">
+            <div className="grid gap-8 md:grid-cols-2">
+              <Input placeholder="Your Name" />
+              <Input placeholder="Email Address" />
+            </div>
+
+            <div className="mt-8">
+              <Input placeholder="Subject" />
+            </div>
+            <div className="mt-8">
+              <TextArea placeholder="Message" />
+            </div>
+            <div className="mt-8">
+              <Button className="mt-5 bg-primary-500 px-8 font-semibold text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-200">
+                Send Message
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </AppLayout>

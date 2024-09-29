@@ -9,20 +9,28 @@ const ContactSection = () => {
   return (
     <>
       <SectionTitle>Get In Touch</SectionTitle>
-      <div className="container py-10">
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="relative mb-10 h-48">
-            <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
-            <h6 className="text-2xl font-bold">Contact with me</h6>
-            <p className="mt-2">I would love to hear from you. 👋</p>
-            <div className="mt-10 text-gray-400">
-              <p>Bhagirathi Heights, Ward No 2,
-                Jayganga Nagar, Keshav Nagar,
-                Mundhwa, Pune, Maharashtra 411036</p>
-              <p>Pune, India</p>
-              <p className="mt-4">+919049023685</p>
-              <p>suyogb8392@gmail.com</p>
-            </div>
+      <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="relative h-48">
+          <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
+          <h6 className="text-2xl font-bold">Let's talk about everything!</h6>
+          <p className="mt-2">Don't like forms? Send me an email. 👋</p>
+        </div>
+        <div className="col-span-2">
+          <div className="grid gap-8 md:grid-cols-2">
+            <Input placeholder="Your Name" />
+            <Input placeholder="Email Address" />
+          </div>
+
+          <div className="mt-8">
+            <Input placeholder="Subject" />
+          </div>
+          <div className="mt-8">
+            <TextArea placeholder="Message" />
+          </div>
+          <div className="mt-8">
+            <Button className="mt-5 bg-primary-500 px-8 font-semibold text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-200">
+              Send Message
+            </Button>
           </div>
         </div>
       </div>

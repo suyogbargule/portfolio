@@ -14,18 +14,24 @@ const Menu = () => {
   return (
     <header className="header text-gray-700 dark:text-gray-200">
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4 md:px-6">
+        <Link href="/">
+          <a className="text-3xl  font-bold">
+            <span>Pofology</span>
+            <span className="text-primary-500">.</span>
+          </a>
+        </Link>
         <ul className="ml-auto hidden items-center md:flex">
           <li>
-            <Link href="/skills">
+            <Link href="/works">
               <a
                 className={classNames(
                   'inline-block px-4 font-semibold  transition-colors duration-300 hover:text-primary-600 hover:underline',
                   {
-                    'text-primary-500': router.asPath == '/skills',
+                    'text-primary-500': router.asPath == '/works',
                   }
                 )}
               >
-                Skills
+                Works
               </a>
             </Link>
           </li>
@@ -40,6 +46,20 @@ const Menu = () => {
                 )}
               >
                 Blog
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+              <a
+                className={classNames(
+                  'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
+                  {
+                    'text-primary-500': router.asPath == '/contact',
+                  }
+                )}
+              >
+                Contact
               </a>
             </Link>
           </li>
@@ -113,14 +133,14 @@ const Menu = () => {
                   </Link>
                 </div>
                 <nav className="mt-4 space-y-1 px-2">
-                  <Link href="/skills">
+                  <Link href="/works">
                     <a
                       className={classNames(
                         'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600',
-                        { 'text-primary-500': router.asPath == '/skills' }
+                        { 'text-primary-500': router.asPath == '/works' }
                       )}
                     >
-                      Skilles
+                      Works
                     </a>
                   </Link>
                   <Link href="/blog">
@@ -131,6 +151,16 @@ const Menu = () => {
                       )}
                     >
                       Blog
+                    </a>
+                  </Link>
+                  <Link href="/contact">
+                    <a
+                      className={classNames(
+                        { 'text-primary-500': router.asPath == '/contact' },
+                        'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600 '
+                      )}
+                    >
+                      Contact
                     </a>
                   </Link>
                 </nav>

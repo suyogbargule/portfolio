@@ -5,7 +5,7 @@ export type Experience = {
   company: string;
   startDate: string;
   endDate: string;
-  descriptionlist: string[];
+  description: string;
 };
 
 export type Education = {
@@ -38,22 +38,6 @@ export type Work = {
   }[];
 };
 
-export type Skill = {
-  id: number;
-  title: string;
-  publishedAt: string;
-  thumbnailUrl: string;
-  imageUrl: string;
-  authorName: string;
-  content: string;
-  library: string;
-  projectlist: string[];
-  experience:string;
-  versionlist:string[];
-  featureslist:string[];
-  summary:string;
-};
-
 export type Post = {
   id: number;
   title: string;
@@ -62,7 +46,6 @@ export type Post = {
   imageUrl: string;
   authorName: string;
   content: string;
-  mediumUrl:string;
 };
 
 export type Review = {
