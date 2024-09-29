@@ -3,844 +3,279 @@ import { Work } from '@/types';
 export const works: Work[] = [
   {
     id: 1,
-    title: 'Personal Portfolio Website',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/portfolio-website.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    title: 'Traffic Management System',
+    category: 'Computer Vision',
+    thumbnailUrl: '/images/works/traffic_management_system.png',
+    description: `A Traffic Management System helps cities monitor and control traffic in 
+    real-time. Using data from cameras and sensors, it adjusts traffic lights and signs to 
+    reduce congestion and improve safety. The system also provides drivers with real-time 
+    updates, quickly detects incidents, and continuously optimizes traffic flow. TMS is 
+    essential for creating safer, more efficient, and sustainable urban transportation.`,
+    publishedAt: '01 July 2024',
+    images: ['/images/works/traffic_management_system.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+      "85% Accuracy",
+      "Under 1 second alert raised",
+      "No-helmet detection",
+      "Tribal rider detection",
+      "Speed detection",
+      "Red light violation",
+      "Number plate detection",
+      "Detection of objects: Car, truck, bicycle, motorcycle, pedestrian",
     ],
     attributes: [
       {
         name: 'Client',
-        value: 'Pofology',
+        value: 'Greater Visakhapatnam Municipal Corporation',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '1 July 2024',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: 'Working',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Computer vision',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'OpenCV, OpenCVDNN, pytorch, OpenVino, Python, Onnx'
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0',
       },
     ],
   },
 
   {
     id: 2,
-    title: 'Social Media App (Instagram Clone)',
-    category: 'Mobile App',
-    thumbnailUrl: '/images/works/social-media-app.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    title: 'Blind Person Guide',
+    category: 'Amazon Web Services and Machine Learning',
+    thumbnailUrl: '/images/works/blind_person_guide_image.png',
+    description: `A blind person's stick or shirt has an attached camera that sends 
+    images to Amazon Web Services, which returns instructions via headphones.`,
+    publishedAt: '01 Mar 202',
+    images: ['/images/works/blind_person_guide_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+      '90% accuracy for identifying a person.',
+      'Multiple objects detected.',
+      'Find the distance from the detected object to the blind person.'
     ],
     attributes: [
       {
         name: 'Client',
-        value: 'Pofology',
+        value: 'japanese company',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '01 Mar 2024',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: '15 July 2024',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Amazon Web Services and Machine Learning',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'AWS Resignation, AWS Sagemaker, Image Segmentation, Vision Transformer',
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0',
       },
     ],
   },
   {
     id: 3,
-    title: 'Marketplace Website (Ebay Clone)',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/marketplace-website.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
+    title: 'Futops surveillance system',
+    category: 'Computer Vision',
+    thumbnailUrl: '/images/works/futops_surveillance_system_icon_image.png',
+    description: `A surveillance system is a network of cameras used to monitor and record activities in a specific area. 
+    The system captures video or images, detects motion, and can store or transmit data for real-time
+    analysis, often used for security in homes, businesses, and public spaces.per person `,
     publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    images: ['/images/works/futops_surveillance_system_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+      'Person face detection.',
+      'Determine the person age and gender.',
+      'Detect whether the person face is masked or not.',
+      'Person face recognition.',
+      'Detect car license plates.',
+      'Identify listed persons or cars and raise an alert or send a notification.',
+      'Respond in under half a second in real-time.',
+      'Detect entry into unwanted areas by any person and trigger an alert.',
+      'Used in homes, malls, offices, and other places.',
+      'Each person face is detected in under 40 milliseconds.'
     ],
     attributes: [
       {
         name: 'Client',
-        value: 'Pofology',
+        value: 'Futops Company product',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '01 Mar 2023',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: '15 October 2023',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Computer vision',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'OpenCV, OpenCV DNN, PyTorch, TensorFlow, OpenVINO, C++ deploy model, ONNX.',
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0',
       },
     ],
   },
 
   {
     id: 4,
-    title: 'Garments Management System',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/garments-management-system.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    title: 'Panorama Generation',
+    category: 'Image Processing',
+    thumbnailUrl: '/images/works/panorama_generation_icon_image.png',
+    description: `River water coming from his area is very difficult to observe. 
+    He deployed a 360-degree camera, but the problem is that capturing all views 
+    in one image results in a panorama.The camera rotates 360 degrees and stops every 
+    20 degrees to take a snapshot. These snapshots are then stitched together using the OpenCV Stitcher.
+    he stitches using image features and a homography matrix, but it doesn’t work correctly at night. 
+    he decided to use the OpenCV Stitcher model, studied various stitching models, and found that some 
+    values are constant in both day and night, making it work properly.`,
+    publishedAt: '20 Oct 2022',
+    images: ['/images/works/panorama_generation_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+      'Panorama generated accurately',
+      'Works properly both day and night',
+      'Deployed on 64 cameras',
+      'Also supports PTZ cameras.'
     ],
     attributes: [
       {
         name: 'Client',
-        value: 'Pofology',
+        value: 'Japan city municipal corporation',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '20 Oct 2022',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: '01 Mar 2023',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Image processing',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'Python, OpenCV Stitcher model, C++.',
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0 , 2.0.0',
       },
     ],
   },
 
   {
     id: 5,
-    title: 'POS System & Inventory Management',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/point-of-sale.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    title: 'Rope Jump Counter App',
+    category: 'Image Processing',
+    thumbnailUrl: '/images/works/rope_jump_counter_app_icon_image.png',
+    description: `The person stands on his mobile and opens the Rope Jump Counter app.
+     The app detects the person's position, visualizes the rope, and starts counting jumps. 
+     It all relies on image processing.`,
+    publishedAt: '15 Dec 2021',
+    images: ['/images/works/rope_jump_counter_app_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+      'Without a rope, a person can still jump',
+      '70% accuracy in counting jumps',
+      'Can be used at any time and in any place.'
     ],
     attributes: [
       {
-        name: 'Client',
-        value: 'Pofology',
+        name: 'AI4SEE Company product',
+        value: '',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '15 Dec 2021',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: '01 May 2022',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Image processing',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'Fluter, Tensorflove lite, Firebase',
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0',
       },
     ],
   },
   {
     id: 6,
-    title: 'Multi Vendor Ecommerce System',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/ecommerce.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
+    title: 'Farmer Product Selling App',
+    category: 'Data Science',
+    thumbnailUrl: '/images/works/farmer_product_selling_app_icon_image.png',
+    description: `This app allows farmers to sell their products directly to end customers, 
+    setting their own prices. The Karnataka government has decided to support direct selling to 
+    customers. Selling price forecasting is done using previous data.`,
+    publishedAt: '10 July 2021',
+    images: ['/images/works/farmer_product_selling_app_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
+     'Forecasting for 4 to 5 days',
+     'Sales constant.'
     ],
     attributes: [
       {
         name: 'Client',
-        value: 'Pofology',
+        value: 'AI4SEE Company product',
       },
       {
         name: 'Start Date',
-        value: '01 July 2022',
+        value: '10 July 2021',
       },
       {
         name: 'End Date',
-        value: '01 October 2022',
+        value: '10 Nov 2022',
       },
       {
         name: 'Category',
-        value: 'Web Development',
+        value: 'Image processing',
       },
       {
         name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
+        value: 'Fluter, Tensorflove lite, Firebase',
       },
       {
         name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: 'Digital Ecommerce Website Design',
-    category: 'UI/UX Design',
-    thumbnailUrl: '/images/works/ecommerce-website-design.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 8,
-    title: 'Digital Marketing App & Website',
-    category: 'Mobile App',
-    thumbnailUrl: '/images/works/digital-marketing-app.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 9,
-    title: 'Food Delivery System & Ecommerce',
-    category: 'Mobile App',
-    thumbnailUrl: '/images/works/food-delivery-app.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: 'Project Management System',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/project-management-system.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 11,
-    title: 'Learning Management System',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/learning-management-system.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
-      },
-    ],
-  },
-  {
-    id: 12,
-    title: 'ERP System & Inventory Management',
-    category: 'Web Development',
-    thumbnailUrl: '/images/works/erp-system.png',
-    description: `Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
-    Vivamus laoreet. Praesent turpis. Nunc nulla.Praesent nec nisl a purus blandit viverra. Nullam dictum felis
-    eu pede mollis pretium. Curabitur vestibulum aliquam leo. Sed libero. Praesent metus tellus, elementum eu,
-    semper a, adipiscing nec Vestibulum ullamcorper mauris at ligula. Phasellus consectetuer vestibulum elit.
-    Sed a libero. Vivamus consectetuer hendrerit lacus. Quisque ut nisi.Cum sociis natoque penatibus`,
-    publishedAt: '01 July 2022',
-    images: ['/images/works/work-01.png', '/images/works/work-02.png', '/images/works/work-03.png'],
-    previewUrl: 'https://pofology.bdlancers.com/',
-    featureList: [
-      '100% Fluid Responsive – Fits any device perfectly',
-      'Tested on real devices',
-      'Flexible Layout',
-      `
-        Use our demo layout or create your own visually different experience using page Vcamp and feature-rich
-        backend`,
-      'Unlimited Sidebars',
-      'Retina Optimized',
-      'Advanced Admin Panel',
-      'Demo Import, Content and Sliders',
-      'Social Links',
-      'Bottom Footer Widgets',
-      'Clean &amp; Commented Code',
-      'Advanced Typography',
-      'Google Fonts – 600+ Font families available',
-      'Custom Font Support',
-      'Custom Page Templates',
-      'Pixel Perfect Design',
-      'Quick &amp; Easy Installation &amp; Setup',
-      'Custom CSS Ready',
-      'HTML5 &amp; CSS3',
-      'Easy Customization With Variable Content Sections',
-      'Custom Build Theme &amp; Page Options',
-      'SEO Ready',
-    ],
-    attributes: [
-      {
-        name: 'Client',
-        value: 'Pofology',
-      },
-      {
-        name: 'Start Date',
-        value: '01 July 2022',
-      },
-      {
-        name: 'End Date',
-        value: '01 October 2022',
-      },
-      {
-        name: 'Category',
-        value: 'Web Development',
-      },
-      {
-        name: 'Skills',
-        value: 'Typescript, Next.js & Tailwind CSS',
-      },
-      {
-        name: 'Current Version',
-        value: '3.0.0',
-      },
-      {
-        name: 'Lisence',
-        value: 'MIT',
+        value: '1.0.0',
       },
     ],
   },

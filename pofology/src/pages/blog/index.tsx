@@ -20,15 +20,12 @@ const Blog = () => {
           {posts.map((post) => (
             <Post
               key={post.id}
-              href={`/blog/${post.id}`}
+              href={post.mediumUrl}
               thumbnailUrl={post.thumbnailUrl}
               title={post.title}
               publishedAt={post.publishedAt}
             />
           ))}
-        </div>
-        <div className="mt-12">
-          <Pagination />
         </div>
       </div>
     </AppLayout>

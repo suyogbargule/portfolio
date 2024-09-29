@@ -6,7 +6,7 @@ import Link from 'next/link';
 const RecentWorkSection = () => {
   return (
     <>
-      <SectionTitle>Recent Works</SectionTitle>
+      <SectionTitle>Corporate Projects</SectionTitle>
       <div className="mt-10 grid gap-4 xs:grid-cols-2 md:grid-cols-3 md:gap-8">
         {works
           .filter((_, index) => index < 6)
@@ -19,12 +19,6 @@ const RecentWorkSection = () => {
               href={`/works/${work.id}`}
             />
           ))}
-      </div>
-
-      <div className="mt-10 flex justify-center">
-        <Link href={'/works'}>
-          <a className="btn">View All</a>
-        </Link>
       </div>
     </>
   );
