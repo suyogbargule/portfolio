@@ -47,3 +47,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/setup-node@v3
+        publish_dir: ./pofology/out
