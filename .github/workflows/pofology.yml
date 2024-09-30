@@ -26,10 +26,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
         run: yarn
-        working-directory: ./pofology
+        working-directory: ./.
       - name: Pofology Build
         run: yarn build
-        working-directory: ./pofology
+        working-directory: ./.
 
   # Deployment Job
   deploy:
@@ -52,14 +52,14 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-        working-directory: ./pofology
+        working-directory: ./.
 
       - name: Build project
         run: yarn build
-        working-directory: ./pofology
+        working-directory: ./.
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./pofology/out 
+          publish_dir: ./out 
