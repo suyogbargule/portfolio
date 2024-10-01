@@ -6,7 +6,7 @@ import { FiFacebook, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
 import CommentBox from '@/components/partials/CommentBox';
 import RecentComment from '@/components/partials/RecentComment';
 import { Post } from '@/types';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps, GetStaticPaths } from 'next';
 import { posts } from '@/data/posts';
 
 type Props = {
@@ -69,20 +69,35 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+// Fetching paths for dynamic routes
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = posts.map((post) => ({
+    params: { id: post.id.toString() },
+  }));
+
+  return {
+    paths,
+    fallback: 'blocking',
+  };
+};
+
+// Fetching data for each blog post
+export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string;
   const post = posts.find((post) => post.id === Number(id));
-  if (post) {
+
+  if (!post) {
     return {
-      props: {
-        post,
-      },
+      notFound: true,
     };
   }
 
   return {
-    notFound: true,
+    props: {
+      post,
+    },
   };
 };
+
 
 export default BlogSingle;
