@@ -1,11 +1,13 @@
 {
+  "homepage": "https://suyogbargule.github.io/portfolio/",
   "name": "next-latest",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.2",
