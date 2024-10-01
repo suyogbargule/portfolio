@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "",
   images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
+  output: "standalone",
 }
-
 module.exports = nextConfig
