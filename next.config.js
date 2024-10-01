@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  basePath: "",
-  images: { unoptimized: true },
   reactStrictMode: true,
-  swcMinify: true,
-  output: "export",
+  env: {
+    CALLINK: "chriscooper/30min",
+  },
+  basePath:
+    process.env.NODE_ENV === "production"
+      ? "https://chriscooper0.github.io/consulting"
+      : undefined,
 };
 
 module.exports = nextConfig;
-
