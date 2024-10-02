@@ -79,7 +79,7 @@ export const skills: Skill[] = [
     title: 'Linux',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/linux_icon_image.png',
-    imageUrl: 'https://suyogbargule.github.io/portfoliohttps://suyogbargule.github.io/portfolio/images/skill/linux_page_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/linux_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
