@@ -5,14 +5,14 @@ export const works: Work[] = [
     id: 1,
     title: 'Traffic Management System',
     category: 'Computer Vision',
-    thumbnailUrl: '/images/works/traffic_management_system.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/traffic_management_system.png',
     description: `A Traffic Management System helps cities monitor and control traffic in 
     real-time. Using data from cameras and sensors, it adjusts traffic lights and signs to 
     reduce congestion and improve safety. The system also provides drivers with real-time 
     updates, quickly detects incidents, and continuously optimizes traffic flow. TMS is 
     essential for creating safer, more efficient, and sustainable urban transportation.`,
     publishedAt: '01 July 2024',
-    images: ['/images/works/traffic_management_system.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/traffic_management_system.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       "85% Accuracy",
@@ -56,11 +56,11 @@ export const works: Work[] = [
     id: 2,
     title: 'Blind Person Guide',
     category: 'Amazon Web Services and Machine Learning',
-    thumbnailUrl: '/images/works/blind_person_guide_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_image.png',
     description: `A blind person's stick or shirt has an attached camera that sends 
     images to Amazon Web Services, which returns instructions via headphones.`,
     publishedAt: '01 Mar 202',
-    images: ['/images/works/blind_person_guide_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       '90% accuracy for identifying a person.',
@@ -98,12 +98,12 @@ export const works: Work[] = [
     id: 3,
     title: 'Futops surveillance system',
     category: 'Computer Vision',
-    thumbnailUrl: '/images/works/futops_surveillance_system_icon_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/futops_surveillance_system_icon_image.png',
     description: `A surveillance system is a network of cameras used to monitor and record activities in a specific area. 
     The system captures video or images, detects motion, and can store or transmit data for real-time
     analysis, often used for security in homes, businesses, and public spaces.per person `,
     publishedAt: '01 July 2022',
-    images: ['/images/works/futops_surveillance_system_page_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/futops_surveillance_system_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       'Person face detection.',
@@ -149,7 +149,7 @@ export const works: Work[] = [
     id: 4,
     title: 'Panorama Generation',
     category: 'Image Processing',
-    thumbnailUrl: '/images/works/panorama_generation_icon_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/panorama_generation_icon_image.png',
     description: `River water coming from his area is very difficult to observe. 
     He deployed a 360-degree camera, but the problem is that capturing all views 
     in one image results in a panorama.The camera rotates 360 degrees and stops every 
@@ -158,7 +158,7 @@ export const works: Work[] = [
     he decided to use the OpenCV Stitcher model, studied various stitching models, and found that some 
     values are constant in both day and night, making it work properly.`,
     publishedAt: '20 Oct 2022',
-    images: ['/images/works/panorama_generation_page_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/panorama_generation_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       'Panorama generated accurately',
@@ -198,12 +198,12 @@ export const works: Work[] = [
     id: 5,
     title: 'Rope Jump Counter App',
     category: 'Image Processing',
-    thumbnailUrl: '/images/works/rope_jump_counter_app_icon_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/rope_jump_counter_app_icon_image.png',
     description: `The person stands on his mobile and opens the Rope Jump Counter app.
      The app detects the person's position, visualizes the rope, and starts counting jumps. 
      It all relies on image processing.`,
     publishedAt: '15 Dec 2021',
-    images: ['/images/works/rope_jump_counter_app_page_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/rope_jump_counter_app_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       'Without a rope, a person can still jump',
@@ -241,12 +241,12 @@ export const works: Work[] = [
     id: 6,
     title: 'Farmer Product Selling App',
     category: 'Data Science',
-    thumbnailUrl: '/images/works/farmer_product_selling_app_icon_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/farmer_product_selling_app_icon_image.png',
     description: `This app allows farmers to sell their products directly to end customers, 
     setting their own prices. The Karnataka government has decided to support direct selling to 
     customers. Selling price forecasting is done using previous data.`,
     publishedAt: '10 July 2021',
-    images: ['/images/works/farmer_product_selling_app_page_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/farmer_product_selling_app_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
      'Forecasting for 4 to 5 days',

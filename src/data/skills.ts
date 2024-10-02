@@ -1,13 +1,13 @@
 import { Skill } from '@/types';
-
+import Image from 'next/image';
 
 export const skills: Skill[] = [
   {
     id: 1,
     title: 'Python',
     publishedAt: '7 April 2022',
-    thumbnailUrl: '/images/skill/python_icon_image.png',
-    imageUrl: '/images/skill/python_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/python_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/python_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -47,8 +47,8 @@ export const skills: Skill[] = [
     id: 2,
     title: 'C++',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/cpp_icon_image.png',
-    imageUrl: '/images/skill/cpp_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/cpp_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/cpp_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -78,8 +78,8 @@ export const skills: Skill[] = [
     id: 3,
     title: 'Linux',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/linux_icon_image.png',
-    imageUrl: '/images/skill/linux_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/linux_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfoliohttps://suyogbargule.github.io/portfolio/images/skill/linux_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -107,8 +107,8 @@ export const skills: Skill[] = [
     id: 4,
     title: 'Docker',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/docker_icon_image.png',
-    imageUrl: '/images/skill/docker_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/docker_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/docker_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -142,8 +142,8 @@ export const skills: Skill[] = [
     id: 5,
     title: 'ZeroMQ',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/zeromq_icon_image.png',
-    imageUrl: '/images/skill/zeromq_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/zeromq_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/zeromq_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -175,8 +175,8 @@ export const skills: Skill[] = [
     id: 6,
     title: 'AWS Rekognition',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/aws_rekognition_icon_image.png',
-    imageUrl: '/images/skill/aws_rekognition_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_rekognition_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_rekognition_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -203,8 +203,8 @@ export const skills: Skill[] = [
     id: 7,
     title: 'AWS Sagemaker',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/aws_sagemaker_icon_image.png',
-    imageUrl: '/images/skill/aws_sagemaker_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_sagemaker_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_sagemaker_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -230,8 +230,8 @@ export const skills: Skill[] = [
     id: 8,
     title: 'AWS S3 Bucket',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/aws_s3_bucket_icon_image.png',
-    imageUrl: '/images/skill/aws_s3_bucket_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_s3_bucket_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_s3_bucket_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -257,8 +257,8 @@ export const skills: Skill[] = [
     id: 9,
     title: 'AWS EC2 instance',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/aws_ec2_instance_icon_image.png',
-    imageUrl: '/images/skill/aws_ec2_instance_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_ec2_instance_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_ec2_instance_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -288,8 +288,8 @@ export const skills: Skill[] = [
     id: 10,
     title: 'Pytorch',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/pytorch_icon_image.png',
-    imageUrl: '/images/skill/pytorch_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/pytorch_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/pytorch_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -327,8 +327,8 @@ export const skills: Skill[] = [
     id: 11,
     title: 'Tensorflow',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/tensorflow_icon_image.png',
-    imageUrl: '/images/skill/tensorflow_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/tensorflow_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/tensorflow_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -356,8 +356,8 @@ export const skills: Skill[] = [
     id: 12,
     title: 'Keras',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/keras_icon_image.png',
-    imageUrl: '/images/skill/keras_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/keras_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/keras_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -390,8 +390,8 @@ export const skills: Skill[] = [
     id: 13,
     title: 'YOLO',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/yolo_icon_image.png',
-    imageUrl: '/images/skill/yolo_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/yolo_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/yolo_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -425,8 +425,8 @@ export const skills: Skill[] = [
     id: 14,
     title: 'ONNX',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/onnx_icon_image.png',
-    imageUrl: '/images/skill/onnx_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/onnx_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/onnx_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -456,8 +456,8 @@ export const skills: Skill[] = [
     id: 15,
     title: 'OpenVino',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/openvino_icon_image.png',
-    imageUrl: '/images/skill/openvino_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/openvino_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/openvino_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
@@ -489,8 +489,8 @@ export const skills: Skill[] = [
     id: 16,
     title: 'OpenCV',
     publishedAt: '9 Mar 2022',
-    thumbnailUrl: '/images/skill/opencv_icon_image.png',
-    imageUrl: '/images/skill/opencv_page_image.png',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/opencv_icon_image.png',
+    imageUrl: 'https://suyogbargule.github.io/portfolio/images/skill/opencv_page_image.png',
     authorName: 'John Doe',
     library: '',
     projectlist: [
