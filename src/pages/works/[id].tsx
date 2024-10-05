@@ -56,6 +56,12 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
               <li key={index}>{feature}</li>
             ))}
           </ul>
+          <h3 className="mt-10 text-xl font-semibold">Contribution</h3>
+          <ul className="mt-4 list-disc pl-4">
+            {work.contribution.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
         </div>
 
         <div className="my-10 rounded-lg bg-gray-50 py-3 shadow-md dark:bg-gray-700">

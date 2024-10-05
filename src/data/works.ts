@@ -24,6 +24,13 @@ export const works: Work[] = [
       "Number plate detection",
       "Detection of objects: Car, truck, bicycle, motorcycle, pedestrian",
     ],
+    contribution:[
+      "Red light violation, No-Helmet and triple rider detection end-to-end pipeline.",
+      "Implemented best snapshot algorithm.",
+      "Improve performance",
+      "Training the relevant models and improving their accuracy.",
+      "Object detection results after post-processing",
+    ],
     attributes: [
       {
         name: 'Client',
@@ -66,6 +73,12 @@ export const works: Work[] = [
       '90% accuracy for identifying a person.',
       'Multiple objects detected.',
       'Find the distance from the detected object to the blind person.'
+    ],
+    contribution:[
+      "Annotated more images.",
+      "Improve performance",
+      "Training the relevant models and improving their accuracy.",
+      "Object detection results after post-processing",
     ],
     attributes: [
       {
@@ -117,6 +130,13 @@ export const works: Work[] = [
       'Used in homes, malls, offices, and other places.',
       'Each person face is detected in under 40 milliseconds.'
     ],
+    contribution:[
+      "Face detection, recognition, age-gender prediction, and masked detection end-to-end pipeline.",
+      "Deploy face detection models with a response time of 30 to 35 milliseconds per face using c++.",
+      "Improve performance",
+      "Training the relevant models and improving their accuracy.",
+      "Object detection results after post-processing",
+    ],
     attributes: [
       {
         name: 'Client',
@@ -166,6 +186,10 @@ export const works: Work[] = [
       'Deployed on 64 cameras',
       'Also supports PTZ cameras.'
     ],
+    contribution:[
+      "Camera controlling to capture snapshots.",
+      "Creating a panorama image using snapshots.",
+    ],
     attributes: [
       {
         name: 'Client',
@@ -210,6 +234,11 @@ export const works: Work[] = [
       '70% accuracy in counting jumps',
       'Can be used at any time and in any place.'
     ],
+    contribution:[
+      "Collect data from websites and other sources.",
+      "Training model using TensorFlow.",
+      "Create a mobile app using Flutter",
+    ],
     attributes: [
       {
         name: 'AI4SEE Company product',
@@ -251,6 +280,11 @@ export const works: Work[] = [
     featureList: [
      'Forecasting for 4 to 5 days',
      'Sales constant.'
+    ],
+    contribution:[
+      "Collect data from websites and other sources.",
+      "Training model using ARIMA time series model.",
+      "Create a mobile app using Flutter",
     ],
     attributes: [
       {
