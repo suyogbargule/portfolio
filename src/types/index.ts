@@ -32,6 +32,7 @@ export type Work = {
   previewUrl: string;
   publishedAt: string;
   featureList: string[];
+  contribution: string[];
   attributes: {
     name: string;
     value: string | number;

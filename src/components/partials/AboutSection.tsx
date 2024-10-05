@@ -13,10 +13,12 @@ const AboutSection = () => {
         {/* Bio */}
         <div className="">
           <p className="text-justify">
-          Hi, I am Suyog Hanmant Bargule, an AI and computer vision engineer.  
-          I work from Pune, India. I have extensive experience in building and 
-          training neural network models, as well as deploying them, IoT, video 
-          streaming, and image processing, etc.
+          Hi, I’m Suyog Hanmant Bargule, an AI and computer vision engineer from Pune, India. 
+          I specialize in building, training, and deploying neural network models, with 
+          expertise in IoT, video streaming, and image processing. My work focuses on 
+          developing scalable AI solutions for real-world applications, including 
+          intelligent surveillance systems for real-time detection. 
+          I'm passionate about creating impactful technologies that enhance user experiences.
           </p>
           <a href="suyog_resume.pdf" download="suyog_resume.pdf">
             <Button className="mt-5">Download CV</Button>
