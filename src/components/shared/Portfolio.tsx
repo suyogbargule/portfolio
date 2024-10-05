@@ -16,16 +16,18 @@ type Props = {
 const Portfolio = ({ imageUrl, category, title, href }: Props) => {
   return (
     <div className={classNames(styles['portfolio'], 'bg-white dark:bg-gray-700')}>
-      <Link href={href}>
       <Image src={imageUrl} height={384} width={512} layout="responsive" alt={title} />
       <div className={styles['portfolio-overlay']}>
         <span className={styles['portfolio-category']}>{category}</span>
+        <Link href={href}>
           <a className={styles['portfolio-title']}>{title}</a>
+        </Link>
+        <Link href={href}>
           <a className={styles['portfolio-link']}>
             <LinkIcon className="h-5 text-white" />
           </a>
+        </Link>
       </div>
-      </Link>
     </div>
   );
 };

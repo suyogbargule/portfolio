@@ -22,6 +22,8 @@ type Props = {
     images: string[];
     publishedAt: string;
     previewUrl: string;
+    featureList: string[];
+    contribution: string[];
   };
 };
 
@@ -58,8 +60,8 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
           </ul>
           <h3 className="mt-10 text-xl font-semibold">Contribution</h3>
           <ul className="mt-4 list-disc pl-4">
-            {work.contribution.map((feature, index) => (
-              <li key={index}>{feature}</li>
+            {work.contribution.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
           </ul>
         </div>
