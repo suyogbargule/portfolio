@@ -67,7 +67,7 @@ export const works: Work[] = [
     description: `A blind person's stick or shirt has an attached camera that sends 
     images to Amazon Web Services, which returns instructions via headphones.`,
     publishedAt: '01 Mar 202',
-    images: ['https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_image.png'],
+    images: ['https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
       '90% accuracy for identifying a person.',
