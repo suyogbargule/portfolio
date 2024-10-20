@@ -20,7 +20,7 @@ const AboutSection = () => {
               including intelligent surveillance systems for real-time problem solving.
               I'm passionate about creating impactful technologies that enhance user experiences.
             </p>
-            <a href="suyog_resume.pdf" download="suyog_resume.pdf">
+            <a href="https://suyogbargule.github.io/portfolio/suyog_resume.pdf" download="https://suyogbargule.github.io/portfolio/suyog_resume.pdf">
               <Button className="mt-5">Download CV</Button>
             </a>
           </div>
