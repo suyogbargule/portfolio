@@ -58,7 +58,7 @@ const HeroSection = () => {
               </a>
             </Link>
           </div>
-          <a href="#contact-me" >
+          <a href=" https://suyogbargule.github.io/portfolio/#contact-me" >
             <Button className="mt-5 px-8">Hire Me</Button>
           </a>
 
