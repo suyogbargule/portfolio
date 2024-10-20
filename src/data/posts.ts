@@ -11,6 +11,6 @@ export const posts: Post[] = [
     content: `
     <p>
          </p>`,
-  mediumUrl:'https://medium.com/@suyogb8392/hand-pose-estimation-using-mobile-cameras-f7dc3dcd197c'
+    mediumUrl: 'https://medium.com/@suyogb8392/hand-pose-estimation-using-mobile-cameras-f7dc3dcd197c'
   },
 ];

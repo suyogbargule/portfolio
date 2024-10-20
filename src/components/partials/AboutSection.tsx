@@ -7,99 +7,99 @@ import ProgressBar from '@/components/shared/ProgressBar';
 const AboutSection = () => {
   return (
     <>
-    <section id="about-me">
-      <SectionTitle>About Me</SectionTitle>
-      <div className="grid grid-cols-1 gap-6 py-6 md:grid-cols-2 lg:gap-8">
-        {/* Bio */}
-        <div className="">
-          <p className="text-justify">
-          Hi, I’m Suyog Hanmant Bargule, an AI and computer vision engineer from Pune, India. 
-          I specialize in building, training, and deploying neural network models, with 
-          expertise in IoT, video streaming, and image processing. My work focuses on 
-          developing scalable AI solutions for real-world applications, including 
-          intelligent surveillance systems for real-time detection. 
-          I'm passionate about creating impactful technologies that enhance user experiences.
-          </p>
-          <a href="suyog_resume.pdf" download="suyog_resume.pdf">
-            <Button className="mt-5">Download CV</Button>
-          </a>
-        </div>
-
-        {/* Skills */}
-        <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+      <section id="about-me">
+        <SectionTitle>About Me</SectionTitle>
+        <div className="grid grid-cols-1 gap-6 py-6 md:grid-cols-2 lg:gap-8">
+          {/* Bio */}
           <div className="">
-            <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Backend</h6>
-              <p>84%</p>
-            </div>
-            <ProgressBar color="blue" progress={85} />
-          </div>
-          <div className="">
-            <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Image Processing</h6>
-              <p>94%</p>
-            </div>
-            <ProgressBar color="amber" progress={95} />
+            <p className="text-justify">
+              Hi, I’m Suyog Hanmant Bargule, an AI and computer vision engineer from Pune, India.
+              I specialize in building, training, and deploying neural network models,
+              with expertise in IoT, video streaming, and image processing.
+              My work focuses on developing scalable AI solutions for real-world applications,
+              including intelligent surveillance systems for real-time problem solving.
+              I'm passionate about creating impactful technologies that enhance user experiences.
+            </p>
+            <a href="suyog_resume.pdf" download="suyog_resume.pdf">
+              <Button className="mt-5">Download CV</Button>
+            </a>
           </div>
 
-          <div className="">
-            <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Model Training</h6>
-              <p>86%</p>
+          {/* Skills */}
+          <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+            <div className="">
+              <div className="mb-3 flex justify-between">
+                <h6 className="font-semibold">Backend</h6>
+                <p>84%</p>
+              </div>
+              <ProgressBar color="blue" progress={85} />
             </div>
-            <ProgressBar color="rose" progress={75} />
-          </div>
-          <div className="">
-            <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Linux</h6>
-              <p>82%</p>
+            <div className="">
+              <div className="mb-3 flex justify-between">
+                <h6 className="font-semibold">Image Processing</h6>
+                <p>94%</p>
+              </div>
+              <ProgressBar color="amber" progress={95} />
             </div>
-            <ProgressBar color="green" progress={80} />
-          </div>
-        </div>
-      </div>
 
-      {/* Overview */}
-      <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
-        <div className="flex">
-          <div className="mr-5 text-gray-300">
-            <HiOutlineFire size={50} />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold">4+</h2>
-            <p className="mt-1">Projects Completed</p>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="mr-5 text-gray-300">
-            <FiCoffee size={50} />
-          </div>
-          <div>
-            <h2 className="text-3xl font-bold">2</h2>
-            <p className="mt-1">Cup of Coffee</p>
+            <div className="">
+              <div className="mb-3 flex justify-between">
+                <h6 className="font-semibold">Model Training</h6>
+                <p>86%</p>
+              </div>
+              <ProgressBar color="rose" progress={75} />
+            </div>
+            <div className="">
+              <div className="mb-3 flex justify-between">
+                <h6 className="font-semibold">Linux</h6>
+                <p>82%</p>
+              </div>
+              <ProgressBar color="green" progress={80} />
+            </div>
           </div>
         </div>
 
-        <div className="flex">
-          <div className="mr-5 text-gray-300">
-            <HiOutlineUsers size={50} />
+        {/* Overview */}
+        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="flex">
+            <div className="mr-5 text-gray-300">
+              <HiOutlineFire size={50} />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold">4+</h2>
+              <p className="mt-1">Projects Completed</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold">4+</h2>
-            <p className="mt-1">Satisfied clients</p>
+          <div className="flex">
+            <div className="mr-5 text-gray-300">
+              <FiCoffee size={50} />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold">2</h2>
+              <p className="mt-1">Cup of Coffee</p>
+            </div>
           </div>
-        </div>
 
-        <div className="flex">
-          <div className="mr-5 text-gray-300">
-            <HiOutlineChartBar size={50} />
+          <div className="flex">
+            <div className="mr-5 text-gray-300">
+              <HiOutlineUsers size={50} />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold">4+</h2>
+              <p className="mt-1">Satisfied clients</p>
+            </div>
           </div>
-          <div>
-            <h2 className="text-3xl font-bold">3+</h2>
-            <p className="mt-1">Years of experience</p>
+
+          <div className="flex">
+            <div className="mr-5 text-gray-300">
+              <HiOutlineChartBar size={50} />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold">3+</h2>
+              <p className="mt-1">Years of experience</p>
+            </div>
           </div>
         </div>
-      </div>
       </section>
     </>
   );

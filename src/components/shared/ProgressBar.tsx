@@ -3,23 +3,23 @@ import React from 'react';
 
 type Props = {
   color?:
-    | 'primary'
-    | 'green'
-    | 'red'
-    | 'orange'
-    | 'amber'
-    | 'yellow'
-    | 'lime'
-    | 'emerald'
-    | 'teal'
-    | 'cyan'
-    | 'sky'
-    | 'blue'
-    | 'indigo'
-    | 'purple'
-    | 'fuchsia'
-    | 'pink'
-    | 'rose';
+  | 'primary'
+  | 'green'
+  | 'red'
+  | 'orange'
+  | 'amber'
+  | 'yellow'
+  | 'lime'
+  | 'emerald'
+  | 'teal'
+  | 'cyan'
+  | 'sky'
+  | 'blue'
+  | 'indigo'
+  | 'purple'
+  | 'fuchsia'
+  | 'pink'
+  | 'rose';
   progress: number;
 };
 

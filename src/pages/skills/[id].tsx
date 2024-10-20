@@ -15,7 +15,7 @@ type Props = {
 };
 
 const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
-  
+
   return (
     <AppLayout title="Blog">
       <div className="container">
@@ -28,7 +28,7 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
           </p>
         </div>
         <div className="mt-10 overflow-hidden rounded-xl">
-            <Image src={post.imageUrl} height={720} width={1280} layout="responsive" alt={post.title} />
+          <Image src={post.imageUrl} height={720} width={1280} layout="responsive" alt={post.title} />
         </div>
 
         <div className="my-10">
@@ -53,7 +53,7 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
             ))}
           </ul>
         </div>
-        </div>
+      </div>
     </AppLayout>
   );
 };

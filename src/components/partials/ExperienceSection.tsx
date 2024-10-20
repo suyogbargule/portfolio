@@ -29,12 +29,12 @@ const ExperienceSection = () => {
                   <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {experience.company}
                   </p>
-           
+
                   <ul className="mt-4 list-disc pl-4">
                     {experience.descriptionlist.map((description, index) => (
-                     <li key={index}>{description}</li>))}
+                      <li key={index}>{description}</li>))}
                   </ul>
-                 
+
                 </li>
               ))}
             </ol>

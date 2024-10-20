@@ -6,11 +6,13 @@ export const works: Work[] = [
     title: 'Traffic Management System',
     category: 'Computer Vision',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/traffic_management_system.png',
-    description: `A Traffic Management System helps cities monitor and control traffic in 
-    real-time. Using data from cameras and sensors, it adjusts traffic lights and signs to 
-    reduce congestion and improve safety. The system also provides drivers with real-time 
-    updates, quickly detects incidents, and continuously optimizes traffic flow. TMS is 
-    essential for creating safer, more efficient, and sustainable urban transportation.`,
+    description: `A Traffic Management System (TMS) helps cities manage traffic in real-time
+    by using data from cameras and sensors. It adjusts traffic lights and signs to reduce
+    congestion and enhance safety. The system provides drivers with real-time updates and
+    quickly detects incidents. It monitors key violations, including helmet use, triple 
+    riding, speed limits, wrong-way driving, traffic jams, stopped vehicles, 
+    traffic pulse, route deviations, no-entry violations, and parking infractions.
+    TMS is crucial for safer, more efficient, and sustainable urban transportation.`,
     publishedAt: '01 July 2024',
     images: ['https://suyogbargule.github.io/portfolio/images/works/traffic_management_system.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
@@ -64,8 +66,10 @@ export const works: Work[] = [
     title: 'Blind Person Guide',
     category: 'Amazon Web Services and Machine Learning',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_image.png',
-    description: `A blind person's stick or shirt has an attached camera that sends 
-    images to Amazon Web Services, which returns instructions via headphones.`,
+    description: `A blind person's stick or shirt is equipped with a camera that captures images and
+    sends them to Amazon Web Services (AWS). In AWS, the system detects objects and calculates their 
+    distance from the camera. This information is then relayed in voice format to the headphones 
+    attached to the person, providing them with instructions based on their surroundings.`,
     publishedAt: '01 Mar 202',
     images: ['https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
@@ -114,7 +118,7 @@ export const works: Work[] = [
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/futops_surveillance_system_icon_image.png',
     description: `A surveillance system is a network of cameras used to monitor and record activities in a specific area. 
     The system captures video or images, detects motion, and can store or transmit data for real-time
-    analysis, often used for security in homes, businesses, and public spaces.per person `,
+    analysis, often used for security in homes, businesses, and public spaces per person `,
     publishedAt: '01 July 2022',
     images: ['https://suyogbargule.github.io/portfolio/images/works/futops_surveillance_system_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
@@ -278,8 +282,8 @@ export const works: Work[] = [
     images: ['https://suyogbargule.github.io/portfolio/images/works/farmer_product_selling_app_page_image.png'],
     previewUrl: 'https://pofology.bdlancers.com/',
     featureList: [
-     'Forecasting for 4 to 5 days',
-     'Sales constant.'
+      'Forecasting for 4 to 5 days',
+      'Sales constant.'
     ],
     contribution: [
       "Collect data from websites and other sources.",
