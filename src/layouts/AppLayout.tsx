@@ -12,7 +12,7 @@ interface Props {
 
 const AppLayout: React.FC<Props> = ({ children, title }) => {
   const appName = process.env.NEXT_PUBLIC_APP_NAME;
-  const pageTitle = title ? `${title} - ${appName}` : appName;
+  const pageTitle = title;
   return (
     <>
       <Head>
