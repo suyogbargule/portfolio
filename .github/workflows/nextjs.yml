@@ -80,7 +80,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-          name: github-pages
       # - name: Upload artifact
       #   uses: actions/upload-artifact@v3
       #   with:
