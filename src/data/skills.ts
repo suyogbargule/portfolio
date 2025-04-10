@@ -562,7 +562,7 @@ export const skills: Skill[] = [
     Language (LCEL) for creating modular and composable workflows. Skilled in integrating \
     with major LLM APIs such as OpenAI, Anthropic, and Hugging Face.",
     content: ""
-  }
+  },
   {
     id: 18,
     title: "Ollama",
