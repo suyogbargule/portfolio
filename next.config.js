@@ -1,20 +1,13 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   images: {unoptimized: true},
-//   reactStrictMode: true,
-//   swcMinify: true,
-// }
-
-// module.exports = nextConfig
-
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: 'export', // Enables static export
+  output: 'export', // Enables static export for GitHub Pages
   images: {
-    unoptimized: true, // Required for static image export
+    unoptimized: true, // Required for static export
   },
-  basePath: process.env.BASE_PATH || '', // Useful if deploying under a subpath
-  assetPrefix: process.env.BASE_PATH || '', // Same as basePath
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
   reactStrictMode: true,
   swcMinify: true,
 };
