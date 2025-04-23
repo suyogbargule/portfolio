@@ -95,5 +95,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
-
-
+          publish_branch: gh-pages
+          force_orphan: true  # recommended for first-time deployment
+          user_name: suyogbargule
+          user_email: suyogbargule@users.noreply.github.com
