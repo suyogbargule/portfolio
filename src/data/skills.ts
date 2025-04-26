@@ -526,5 +526,79 @@ export const skills: Skill[] = [
     includes image read, write, reshaping, cropping, and adding text using putText \
     to enhance and manipulate images effectively for different computer vision tasks.',
     content: '',
+  },
+  {
+    id: 17,
+    title: "LangChain",
+    publishedAt: "3 October 2022",
+    thumbnailUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_icon_image.png",
+    imageUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_page_image.png",
+    authorName: "langchain-ai",
+    library: "",
+    projectlist: [
+      "Conversational AI Chatbot"
+    ],
+    experience: "1 year",
+    versionlist: [
+      "LangChain v0.3"
+    ],
+    featureslist: [
+      "LLM Chains",
+      "Prompt Templates",
+      "Vector Store Integration (Pinecone, FAISS, Chroma)",
+      "Document Loaders & Indexing",
+      "Retrieval-Augmented Generation (RAG)",
+      "Agents & Tools",
+      "Memory Management",
+      "LangChain Expression Language (LCEL)",
+      "Streaming & Async Support",
+      "Integration with OpenAI, Hugging Face, Cohere"
+    ],
+    summary: "Proficient in building LLM-powered applications using LangChain. \
+    Experienced in designing prompt chains, leveraging document loaders, \
+    and implementing RAG pipelines with vector stores like FAISS and Pinecone. \
+    Developed real-time conversational agents and task-based automation workflows \
+    using LangChain’s tools and memory modules. Familiar with LangChain Expression \
+    Language (LCEL) for creating modular and composable workflows. Skilled in integrating \
+    with major LLM APIs such as OpenAI, Anthropic, and Hugging Face.",
+    content: ""
+  },
+  {
+    id: 18,
+    title: "Ollama",
+    publishedAt: "July 2023",
+    thumbnailUrl: "https://suyogbargule.github.io/portfolio/images/skill/ollama_icon_image.png",
+    imageUrl: "https://suyogbargule.github.io/portfolio/images/skill/ollama_page_image.png",
+    authorName: "Ollama",
+    library: "",
+    projectlist: [
+      "Conversational AI Chatbot"
+    ],
+    experience: "1 Year",
+    versionlist: [
+      "Ollama v0.6.5",
+      "Ollama v0.6.4",
+      "Ollama v0.6.0"
+    ],
+    featureslist: [
+      "Run LLMs locally (LLaMA, Mistral, Gemma, etc.)",
+      "No internet required for inference",
+      "Model customization via Modelfile",
+      "Docker-like CLI experience",
+      "Supports GPU acceleration",
+      "Integration with LangChain and OpenAI-compatible APIs",
+      "Streaming responses",
+      "Multi-model support",
+      "Simple model pulling and versioning",
+      "Local development for private and secure AI"
+    ],
+    summary: "Hands-on experience using Ollama to run and manage large language models locally. \
+  Deployed and tested open-source models such as LLaMA and Mistral in secure, offline environments. \
+  Proficient in customizing models using the Modelfile for optimized inference. \
+  Integrated Ollama with LangChain to build local RAG pipelines and conversational AI interfaces. \
+  Skilled in using the Ollama CLI and scripting workflows for efficient and private LLM development. \
+  Also experienced in deploying lightweight models for edge devices, experimenting with prompt tuning, \
+  and evaluating performance across different hardware configurations using GPU acceleration.",
+  content: ""
   }
 ];
