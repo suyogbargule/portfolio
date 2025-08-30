@@ -3,6 +3,123 @@ import { Work } from '@/types';
 export const works: Work[] = [
   {
     id: 1,
+    title: 'Chatbot',
+    category: 'Generative AI',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/chatbot_image.png',
+    description: `Designed and implemented a RAG-Powered Chatbot tailored for UAE institutes.
+      Leveraged LangFlow to build a native Retrieval-Augmented Generation pipeline.
+      Integrated institutional data sources for accurate and up-to-date information retrieval.
+      Enabled contextual understanding to provide precise, student-specific answers.
+      Delivered real-time responses for queries related to courses, faculty, and institute details.
+      Improved student–institute communication by reducing response delays.
+      Enhanced student experience through personalized, conversational support.
+      Strengthened institute engagement by making information more accessible and interactive.`,
+    publishedAt: '01 July 2024',
+    images: ['https://suyogbargule.github.io/portfolio/images/works/chatbot_image.png'],
+    previewUrl: 'https://pofology.bdlancers.com/',
+    featureList: [
+      "Implemented a chatbot system for all universities in the UAE to provide centralized information.",
+      "Integrated the chatbot into the university website for easy student access.",
+      "Enabled users to collect information about courses, scholarships, and admission details.",
+      "Designed the chatbot to enhance student–university interaction through real-time responses.",
+      "Improved the overall user experience by simplifying information discovery.",
+    ],
+    contribution: [
+      "All data from the SQL database is stored in the Qdrant vector database using a combined SQL query\
+       this pipeline has been implemented successfully.",
+      "A RAG-based chatbot workflow has been implemented using LangFlow to interact with users.",
+      "The chatbot controls the access to limited data and manages multiple user requests efficiently.",
+      "The system ensures accurate and organized information delivery while handling diverse user \
+      requirements.",
+    ],
+    attributes: [
+      {
+        name: 'Client',
+        value: 'Greater Visakhapatnam Municipal Corporation',
+      },
+      {
+        name: 'Start Date',
+        value: '25 Aug 2025',
+      },
+      {
+        name: 'End Date',
+        value: 'Working',
+      },
+      {
+        name: 'Category',
+        value: 'Generative AI',
+      },
+      {
+        name: 'Skills',
+       value: 'LangChain, LangFlow, LangGraph, LangSmith, LLM API Models, Vector database, FastAPI, Python'
+      },
+      {
+        name: 'Current Version',
+        value: '1.0.0',
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Lead Generation',
+    category: 'Generative AI',
+    thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/lead_generation_image.png',
+    description: `Developed an AI-Powered Lead Generation Agent to automate the entire prospecting workflow.
+      Integrated n8n workflows to orchestrate data collection, processing, and outreach tasks seamlessly.
+      Connected Apollo AI, Afify Scraper, and LinkedIn data to gather accurate company and prospect information.
+      Enriched lead profiles with company insights, decision-maker roles, and verified contact details.
+      Implemented AI-based analysis to score and qualify leads automatically based on relevance and potential.
+      Generated personalized outreach messages and follow-up emails using LLM-powered content creation.
+      Reduced manual prospecting workload by 80%, freeing teams to focus on closing deals.
+      Achieved higher conversion rates, improving both lead quality and overall sales pipeline efficiency.`,
+    publishedAt: '22 Jun 2024',
+    images: ['https://suyogbargule.github.io/portfolio/images/works/lead_generation_image.png'],
+    previewUrl: 'https://pofology.bdlancers.com/',
+    featureList: [
+      "Define user requirements such as target industry, company name, company size, and specific employee roles or job titles.",
+      "Classify company size based on employee count to filter the right prospects.",
+      "Automatically discover leads using LinkedIn data, company websites, and official LinkedIn company pages.",
+      "Track and analyze lead data to ensure it matches the defined requirements.",
+      "Rank leads by compatibility with the company’s product or service.",
+      "Automatically generate personalized outreach emails for the selected leads.",
+      "Send follow-up emails automatically, customized for engagement and timing.",
+      "Track and analyze email responses to measure engagement and refine outreach strategy.",
+    ],
+    contribution: [
+      "Rank leads by compatibility with the company’s product or service.",
+      "Automatically generate personalized outreach emails for the selected leads.",
+      "Send follow-up emails automatically, customized for engagement and timing.",
+      "Track and analyze email responses to measure engagement and refine outreach strategy.",
+    ],
+    attributes: [
+      {
+        name: 'Client',
+        value: 'The company’s own product',
+      },
+      {
+        name: 'Start Date',
+        value: '22 Jan 2025',
+      },
+      {
+        name: 'End Date',
+        value: '05 Aug 2025',
+      },
+      {
+        name: 'Category',
+        value: 'Generative AI',
+      },
+      {
+        name: 'Skills',
+        value: 'Langchine, LLM API Models, Apollo, Apify, Tavily, Firecrawl, n8n workflow, FASTAPI, Python'
+     },
+      {
+        name: 'Current Version',
+        value: '1.0.0',
+      },
+    ],
+  },
+  {
+    id: 3,
     title: 'Traffic Management System',
     category: 'Computer Vision',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/traffic_management_system.png',
@@ -25,6 +142,7 @@ export const works: Work[] = [
       "Red light violation",
       "Number plate detection",
       "Detection of objects: Car, truck, bicycle, motorcycle, pedestrian",
+      "The YOLOv8 model is implemented for intrusion detection.",
     ],
     contribution: [
       "Red light violation, No-Helmet and triple rider detection end-to-end pipeline.",
@@ -44,7 +162,7 @@ export const works: Work[] = [
       },
       {
         name: 'End Date',
-        value: 'Working',
+        value: '2 Jan 2025',
       },
       {
         name: 'Category',
@@ -62,7 +180,7 @@ export const works: Work[] = [
   },
 
   {
-    id: 2,
+    id: 4,
     title: 'Blind Person Guide',
     category: 'Amazon Web Services and Machine Learning',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/blind_person_guide_image.png',
@@ -112,7 +230,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: 'Futops surveillance system',
     category: 'Computer Vision',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/futops_surveillance_system_icon_image.png',
@@ -170,7 +288,7 @@ export const works: Work[] = [
   },
 
   {
-    id: 4,
+    id: 6,
     title: 'Panorama Generation',
     category: 'Image Processing',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/panorama_generation_icon_image.png',
@@ -223,7 +341,7 @@ export const works: Work[] = [
   },
 
   {
-    id: 5,
+    id: 7,
     title: 'Rope Jump Counter App',
     category: 'Image Processing',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/rope_jump_counter_app_icon_image.png',
@@ -271,7 +389,7 @@ export const works: Work[] = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     title: 'Farmer Product Selling App',
     category: 'Data Science',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/works/farmer_product_selling_app_icon_image.png',
