@@ -8,7 +8,7 @@ const SkillSection = () => {
       <SectionTitle>Skills</SectionTitle>
       <div className="mt-10 grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">
         {skills
-          .filter((_, index) => index < 3)
+          .filter((_, index) => index < 9)
           .map((skill) => (
             <Skill
               key={skill.id}

@@ -4,6 +4,168 @@ import Image from 'next/image';
 export const skills: Skill[] = [
   {
     id: 1,
+    title: "LangChain",
+    publishedAt: "3 October 2022",
+    thumbnailUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_icon_image.png",
+    imageUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_page_image.png",
+    authorName: "langchain-ai",
+    library: "",
+    projectlist: [
+      "Conversational AI Chatbot"
+    ],
+    experience: "1 year",
+    versionlist: [
+      "LangChain v0.3"
+    ],
+    featureslist: [
+      "LLM Chains",
+      "Prompt Templates",
+      "Vector Store Integration (Pinecone, FAISS, Chroma)",
+      "Document Loaders & Indexing",
+      "Retrieval-Augmented Generation (RAG)",
+      "Agents & Tools",
+      "Memory Management",
+      "LangChain Expression Language (LCEL)",
+      "Streaming & Async Support",
+      "Integration with OpenAI, Hugging Face, Cohere"
+    ],
+    summary: "Proficient in building LLM-powered applications using LangChain. \
+    Experienced in designing prompt chains, leveraging document loaders, \
+    and implementing RAG pipelines with vector stores like FAISS and Pinecone. \
+    Developed real-time conversational agents and task-based automation workflows \
+    using LangChain’s tools and memory modules. Familiar with LangChain Expression \
+    Language (LCEL) for creating modular and composable workflows. Skilled in integrating \
+    with major LLM APIs such as OpenAI, Anthropic, and Hugging Face.",
+    content: ""
+  },
+  {
+    "id": 2,
+    "title": "LangGraph",
+    "publishedAt": "June 2024",
+    "thumbnailUrl": "https://suyogbargule.github.io/portfolio/images/skill/langgraph_icon_image.png",
+    "imageUrl": "https://suyogbargule.github.io/portfolio/images/skill/langgraph_page_image.png",
+    "authorName": "langchain-ai",
+    "library": "",
+    "projectlist": [
+      "Complex RAG Pipelines",
+      "Multi-Agent Systems"
+    ],
+    "experience": "6 months",
+    "versionlist": [
+      "LangGraph v0.1"
+    ],
+    "featureslist": [
+      "Graph-based workflow design",
+      "Multi-agent orchestration",
+      "Step-by-step workflow control",
+      "Error handling & retries",
+      "Composable nodes & edges",
+      "Seamless integration with LangChain",
+      "Supports memory and state management",
+      "Visual debugging with node graphs"
+    ],
+    "summary": "Hands-on experience with LangGraph to design structured and controllable AI pipelines. \
+    Skilled in building graph-based multi-agent systems with retries, branching, and error handling. \
+    Proficient in integrating LangGraph with LangChain tools and memory modules for scalable LLM workflows.",
+    "content": ""
+  },
+  {
+    "id": 3,
+    "title": "LangFlow",
+    "publishedAt": "April 2023",
+    "thumbnailUrl": "https://suyogbargule.github.io/portfolio/images/skill/langflow_icon_image.png",
+    "imageUrl": "https://suyogbargule.github.io/portfolio/images/skill/langflow_page_image.png",
+    "authorName": "logspace-ai",
+    "library": "",
+    "projectlist": [
+      "RAG-powered Chatbot",
+      "Visual AI Prototyping"
+    ],
+    "experience": "8 months",
+    "versionlist": [
+      "LangFlow v0.5"
+    ],
+    "featureslist": [
+      "Drag-and-drop interface",
+      "Visual workflow builder",
+      "RAG pipeline creation",
+      "Prompt templates & chaining",
+      "Vector DB integrations",
+      "Streaming support",
+      "Custom component support",
+      "Deployment-ready API endpoints"
+    ],
+    "summary": "Experienced in creating modular and visual AI applications using LangFlow. \
+    Built RAG-powered chatbots and custom workflows with drag-and-drop components. \
+    Skilled in integrating LangFlow with vector databases and LLM APIs for production-ready prototypes.",
+    "content": ""
+  },  
+  {
+    "id": 4,
+    "title": "n8n",
+    "publishedAt": "2019",
+    "thumbnailUrl": "https://suyogbargule.github.io/portfolio/images/skill/n8n_icon_image.png",
+    "imageUrl": "https://suyogbargule.github.io/portfolio/images/skill/n8n_page_image.png",
+    "authorName": "n8n.io",
+    "library": "",
+    "projectlist": [
+      "AI-Powered Lead Generation",
+      "Automation Workflows",
+      "Data Pipeline Orchestration"
+    ],
+    "experience": "1 year",
+    "versionlist": [
+      "n8n v1.0"
+    ],
+    "featureslist": [
+      "No-code / Low-code automation",
+      "1000+ prebuilt integrations (APIs, SaaS, DBs)",
+      "Custom JavaScript nodes",
+      "Webhook triggers & event-driven flows",
+      "AI & LLM integrations",
+      "Workflow version control",
+      "Scalable with self-hosting & cloud",
+      "Parallel task execution"
+    ],
+    "summary": "Proficient in building end-to-end automation workflows with n8n. \
+    Implemented AI-powered lead generation, task automation, and data synchronization pipelines. \
+    Skilled in connecting APIs, databases, and AI services with custom logic and conditional workflows.",
+   "content": ""
+  },
+  {
+    "id": 5,
+    "title": "LangSmith",
+    "publishedAt": "July 2023",
+    "thumbnailUrl": "https://suyogbargule.github.io/portfolio/images/skill/langsmith_icon_image.png",
+    "imageUrl": "https://suyogbargule.github.io/portfolio/images/skill/langsmith_page_image.png",
+    "authorName": "langchain-ai",
+    "library": "",
+    "projectlist": [
+      "LLM Debugging",
+      "Evaluation & Monitoring"
+    ],
+    "experience": "6 months",
+    "versionlist": [
+      "LangSmith v0.2"
+    ],
+    "featureslist": [
+      "End-to-end tracing of LLM calls",
+      "Experimentation & version control",
+      "Dataset management",
+      "LLM output evaluation",
+      "Prompt optimization",
+      "Collaboration tools for teams",
+      "Integration with LangChain and LangGraph",
+      "Cloud-hosted and API-based monitoring"
+    ],
+    "summary": "Experienced in using LangSmith for debugging, monitoring, and evaluating \
+    LLM applications. Proficient in prompt optimization, tracing executions, \
+    and managing datasets for consistent evaluations. Skilled in integrating LangSmith \
+    with LangChain pipelines to ensure reliability and performance.",
+    "content": ""
+  },
+  {
+    id: 6,
     title: 'Python',
     publishedAt: '7 April 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/python_icon_image.png',
@@ -11,6 +173,8 @@ export const skills: Skill[] = [
     authorName: 'John Doe',
     library: '',
     projectlist: [
+      'Chatbot',
+      'Lead Generation',
       'Traffic Management System',
       'Blind Person Guide',
       'Futops surveillance system',
@@ -28,12 +192,16 @@ export const skills: Skill[] = [
       '3.12',
     ],
     featureslist: [
+      'LangChain',
+      'LangGraph',
+      'LangSmith',
       'Numpy',
       'Pandas',
       'OpenCV',
       'Pytorch',
       'Keras',
-      'Onnx'
+      'Onnx',
+
     ],
     summary: 'Experienced in Python, proficient in multiple programming paradigms \
     such as object-oriented, procedural, and functional programming. Skilled in developing \
@@ -44,7 +212,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 2,
+    id: 7,
     title: 'C++',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/cpp_icon_image.png',
@@ -75,7 +243,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 3,
+    id: 8,
     title: 'Linux',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/linux_icon_image.png',
@@ -104,7 +272,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 4,
+    id: 9,
     title: 'Docker',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/docker_icon_image.png',
@@ -139,7 +307,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 5,
+    id: 10,
     title: 'ZeroMQ',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/zeromq_icon_image.png',
@@ -172,7 +340,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 6,
+    id: 11,
     title: 'AWS Rekognition',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_rekognition_icon_image.png',
@@ -200,7 +368,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 7,
+    id: 12,
     title: 'AWS Sagemaker',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_sagemaker_icon_image.png',
@@ -227,7 +395,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 8,
+    id: 13,
     title: 'AWS S3 Bucket',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_s3_bucket_icon_image.png',
@@ -254,7 +422,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 9,
+    id: 14,
     title: 'AWS EC2 instance',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/aws_ec2_instance_icon_image.png',
@@ -285,7 +453,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 10,
+    id: 15,
     title: 'Pytorch',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/pytorch_icon_image.png',
@@ -324,7 +492,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 11,
+    id: 16,
     title: 'Tensorflow',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/tensorflow_icon_image.png',
@@ -353,7 +521,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 12,
+    id: 17,
     title: 'Keras',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/keras_icon_image.png',
@@ -387,7 +555,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 13,
+    id: 18,
     title: 'YOLO',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/yolo_icon_image.png',
@@ -422,7 +590,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 14,
+    id: 19,
     title: 'ONNX',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/onnx_icon_image.png',
@@ -453,7 +621,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 15,
+    id: 20,
     title: 'OpenVino',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/openvino_icon_image.png',
@@ -486,7 +654,7 @@ export const skills: Skill[] = [
     content: '',
   },
   {
-    id: 16,
+    id: 21,
     title: 'OpenCV',
     publishedAt: '9 Mar 2022',
     thumbnailUrl: 'https://suyogbargule.github.io/portfolio/images/skill/opencv_icon_image.png',
@@ -527,44 +695,9 @@ export const skills: Skill[] = [
     to enhance and manipulate images effectively for different computer vision tasks.',
     content: '',
   },
+  
   {
-    id: 17,
-    title: "LangChain",
-    publishedAt: "3 October 2022",
-    thumbnailUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_icon_image.png",
-    imageUrl: "https://suyogbargule.github.io/portfolio/images/skill/langchain_page_image.png",
-    authorName: "langchain-ai",
-    library: "",
-    projectlist: [
-      "Conversational AI Chatbot"
-    ],
-    experience: "1 year",
-    versionlist: [
-      "LangChain v0.3"
-    ],
-    featureslist: [
-      "LLM Chains",
-      "Prompt Templates",
-      "Vector Store Integration (Pinecone, FAISS, Chroma)",
-      "Document Loaders & Indexing",
-      "Retrieval-Augmented Generation (RAG)",
-      "Agents & Tools",
-      "Memory Management",
-      "LangChain Expression Language (LCEL)",
-      "Streaming & Async Support",
-      "Integration with OpenAI, Hugging Face, Cohere"
-    ],
-    summary: "Proficient in building LLM-powered applications using LangChain. \
-    Experienced in designing prompt chains, leveraging document loaders, \
-    and implementing RAG pipelines with vector stores like FAISS and Pinecone. \
-    Developed real-time conversational agents and task-based automation workflows \
-    using LangChain’s tools and memory modules. Familiar with LangChain Expression \
-    Language (LCEL) for creating modular and composable workflows. Skilled in integrating \
-    with major LLM APIs such as OpenAI, Anthropic, and Hugging Face.",
-    content: ""
-  },
-  {
-    id: 18,
+    id: 22,
     title: "Ollama",
     publishedAt: "July 2023",
     thumbnailUrl: "https://suyogbargule.github.io/portfolio/images/skill/ollama_icon_image.png",
