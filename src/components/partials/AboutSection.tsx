@@ -15,7 +15,7 @@ const AboutSection = () => {
             <p className="text-justify">
               Hi, I’m Suyog Hanmant Bargule, an AI & Computer Vision Engineer from Pune, India.
               I specialize in designing, training, and deploying neural network models, with expertise in Generative AI, Video AI, IoT, streaming, and image processing.
-              My work involves building scalable AI solutions and problem-solving workflows using generative models, applied to real-world use cases like intelligent surveillance systems, real-time video analytics, and interactive AI-powered tools.
+              My work involves building scalable AI solutions and problem solving workflows using generative models, applied to real-world use cases like intelligent surveillance systems, real-time video analytics, and interactive AI-powered tools.
               I’m passionate about combining cutting-edge AI research with practical engineering to create impactful solutions that solve real problems and enhance user experiences.
             </p>
             <a
@@ -34,6 +34,14 @@ const AboutSection = () => {
                 <p>90%</p>
               </div>
               <ProgressBar color="blue" progress={90} />
+            </div>
+
+            <div>
+              <div className="mb-3 flex justify-between">
+                <h6 className="font-semibold">Backend</h6>
+                <p>80%</p>
+              </div>
+              <ProgressBar color="emerald" progress={80} />
             </div>
 
             <div>
@@ -68,13 +76,7 @@ const AboutSection = () => {
               <ProgressBar color="rose" progress={86} />
             </div>
 
-            <div>
-              <div className="mb-3 flex justify-between">
-                <h6 className="font-semibold">Backend</h6>
-                <p>80%</p>
-              </div>
-              <ProgressBar color="emerald" progress={80} />
-            </div>
+            
           </div>
         </div>
 
