@@ -47,8 +47,7 @@ export const skills: Skill[] = [
     "authorName": "langchain-ai",
     "library": "",
     "projectlist": [
-      "Complex RAG Pipelines",
-      "Multi-Agent Systems"
+      "Conversational AI Chatbot",
     ],
     "experience": "6 months",
     "versionlist": [
