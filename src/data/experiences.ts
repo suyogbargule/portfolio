@@ -3,14 +3,13 @@ import { Experience } from '@/types';
 export const experiences: Experience[] = [
   {
     jobTitle: "Artificial Intelligence Engineer",
-    company: "Geta AI Labs Private Limited",
-    startDate: "Aug 2025",
+    company: "Simplifi Dentistry Solutions India Pvt Ltd",
+    startDate: "Oct 2025",
     endDate: "Present",
     descriptionlist: [
-      'RAG-Powered Chatbot for UEA Institutes Implemented a Native Retrieval\
-      -Augmented Generation (RAG) chatbot using Langflow, enabling accurate \
-      information retrieval and improving student–institute interactions \
-      with contextual, real-time responses.'
+      'Built an AI automation tool using RAG, LangFlow, Playwright, and LangChain. \
+       It helps dental clinics collect patient insurance info, verify benefits, \
+       and manage claim processing automatically.'
     ]
   },
   {
