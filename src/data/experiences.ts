@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
     jobTitle: "Artificial Intelligence Engineer",
     company: "Simplifi Dentistry Solutions India Pvt Ltd",
     startDate: "Oct 2025",
-    endDate: "Present",
+    endDate: "Jan 2026",
     descriptionlist: [
       'Built an AI automation tool using RAG, LangFlow, Playwright, and LangChain. \
        It helps dental clinics collect patient insurance info, verify benefits, \
