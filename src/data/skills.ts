@@ -1,7 +1,8 @@
 import { Skill } from '@/types';
+import { publicAssetPath } from '@/lib/publicAssetPath';
 
 const skillImage = (skill: string, image: 'icon' | 'cover', extension: 'png' | 'svg' = 'png') =>
-  `/images/skill/${skill}/${image}.${extension}`;
+  publicAssetPath(`/images/skill/${skill}/${image}.${extension}`);
 
 export const skills: Skill[] = [
   {

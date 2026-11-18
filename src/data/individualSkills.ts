@@ -1,5 +1,6 @@
 import { Skill } from '@/types';
 import { skills } from '@/data/skills';
+import { publicAssetPath } from '@/lib/publicAssetPath';
 
 type SkillGroup = {
   category: string;
@@ -204,8 +205,8 @@ const technologyAssets: Record<string, { folder: string; category: string; cover
 
 const directTechnologyAssets: Record<string, { icon: string; cover: string }> = {
   'Microsoft Azure': {
-    icon: '/images/skill/azure-app-service/icon.svg',
-    cover: '/images/skill/azure-app-service/cover.png'
+    icon: publicAssetPath('/images/skill/azure-app-service/icon.svg'),
+    cover: publicAssetPath('/images/skill/azure-app-service/cover.png')
   }
 };
 
@@ -228,7 +229,7 @@ export const individualSkills: Skill[] = skillGroups.flatMap((group) => {
     const asset = technologyAssets[title];
     const directAsset = directTechnologyAssets[title];
     const assetBase = asset
-      ? `/images/skill/${asset.category}/technologies/${asset.folder}`
+      ? publicAssetPath(`/images/skill/${asset.category}/technologies/${asset.folder}`)
       : undefined;
     const imageUrl = dedicatedSource?.imageUrl
       || directAsset?.icon

@@ -1,10 +1,11 @@
 import { Review } from '@/types';
+import { publicAssetPath } from '@/lib/publicAssetPath';
 
 export const reviews: Review[] = [
   {
     author: {
       name: 'John Doe',
-      imageUrl: '/images/avatar/avatar-1.png',
+      imageUrl: publicAssetPath('/images/avatar/avatar-1.png'),
       designation: 'General Manager',
       company: 'Lockheed Martin',
     },
@@ -15,7 +16,7 @@ export const reviews: Review[] = [
   {
     author: {
       name: 'William Smith',
-      imageUrl: '/images/avatar/avatar-2.png',
+      imageUrl: publicAssetPath('/images/avatar/avatar-2.png'),
       designation: 'CEO',
       company: 'Bomerang',
     },
@@ -26,7 +27,7 @@ export const reviews: Review[] = [
   {
     author: {
       name: 'Eloise Harper',
-      imageUrl: '/images/avatar/avatar-3.png',
+      imageUrl: publicAssetPath('/images/avatar/avatar-3.png'),
       designation: 'CTO',
       company: 'Starbucks',
     },
