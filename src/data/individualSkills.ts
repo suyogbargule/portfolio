@@ -208,7 +208,7 @@ const skillFolderName = (title: string) =>
   || title.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 const skillImagePath = (categoryFolder: string, title: string) =>
-  publicAssetPath(`/images/skill/${categoryFolder}/${skillFolderName(title)}/cover.svg`);
+  publicAssetPath(`/images/skill/${categoryFolder}/${skillFolderName(title)}/cover.svg?v=2`);
 
 type IndividualSkillDetails = {
   summary: string;
