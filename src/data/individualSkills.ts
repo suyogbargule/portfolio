@@ -4,6 +4,7 @@ import { publicAssetPath } from '@/lib/publicAssetPath';
 
 type SkillGroup = {
   category: string;
+  folder: string;
   sourceId: number;
   items: string[];
 };
@@ -11,6 +12,7 @@ type SkillGroup = {
 const skillGroups: SkillGroup[] = [
   {
     category: 'Generative AI & LLMs',
+    folder: 'generative-ai',
     sourceId: 1,
     items: [
       'Large Language Models (LLMs)',
@@ -33,6 +35,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Agent Frameworks & Orchestration',
+    folder: 'agent-frameworks',
     sourceId: 2,
     items: [
       'LangChain',
@@ -48,6 +51,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Vector Databases & Retrieval',
+    folder: 'vector-retrieval',
     sourceId: 3,
     items: [
       'FAISS',
@@ -60,6 +64,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Computer Vision',
+    folder: 'computer-vision',
     sourceId: 4,
     items: [
       'OpenCV',
@@ -80,6 +85,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Machine Learning & Deep Learning',
+    folder: 'machine-learning',
     sourceId: 5,
     items: [
       'PyTorch',
@@ -100,6 +106,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Natural Language Processing (NLP)',
+    folder: 'nlp',
     sourceId: 6,
     items: [
       'NLP',
@@ -112,11 +119,13 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Programming Languages',
+    folder: 'programming-languages',
     sourceId: 7,
     items: ['Python', 'C#', 'C++', 'JavaScript', 'SQL']
   },
   {
     category: 'Backend & Integration',
+    folder: 'backend-integration',
     sourceId: 8,
     items: [
       'FastAPI',
@@ -132,11 +141,13 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Databases',
+    folder: 'databases',
     sourceId: 9,
     items: ['PostgreSQL', 'MongoDB', 'SQL']
   },
   {
     category: 'Cloud Platforms',
+    folder: 'cloud-platforms',
     sourceId: 10,
     items: [
       'Microsoft Azure',
@@ -150,6 +161,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'MLOps & Deployment',
+    folder: 'mlops-deployment',
     sourceId: 11,
     items: [
       'Docker',
@@ -165,11 +177,13 @@ const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Development Tools',
+    folder: 'developer-tools',
     sourceId: 12,
     items: ['Git', 'GitHub', 'Linux', 'Visual Studio Code']
   },
   {
     category: 'Domain Expertise',
+    folder: 'domain-expertise',
     sourceId: 13,
     items: [
       'Contract Lifecycle Management (CLM)',
@@ -183,32 +197,18 @@ const skillGroups: SkillGroup[] = [
   }
 ];
 
-const technologyAssets: Record<string, { folder: string; category: string; coverOnly?: boolean }> = {
-  'LangSmith': { folder: 'langsmith', category: 'agent-frameworks' },
-  'LangFlow': { folder: 'langflow', category: 'agent-frameworks' },
-  'n8n': { folder: 'n8n', category: 'agent-frameworks' },
-  'OpenCV': { folder: 'opencv', category: 'computer-vision', coverOnly: true },
-  'YOLO v5': { folder: 'yolo', category: 'computer-vision' },
-  'YOLO v7': { folder: 'yolo', category: 'computer-vision' },
-  'YOLO v8': { folder: 'yolo', category: 'computer-vision' },
-  'YOLO v11': { folder: 'yolo', category: 'computer-vision' },
-  'Keras': { folder: 'keras', category: 'machine-learning' },
-  'TensorFlow': { folder: 'tensorflow', category: 'machine-learning' },
-  'TensorFlow Lite': { folder: 'tensorflow', category: 'machine-learning' },
-  'C++': { folder: 'cpp', category: 'programming-languages' },
-  'Ollama': { folder: 'ollama', category: 'generative-ai', coverOnly: true },
-  'Amazon Web Services (AWS)': { folder: 'aws-s3', category: 'cloud-platforms' },
-  'ONNX': { folder: 'onnx', category: 'mlops-deployment' },
-  'ONNX Runtime': { folder: 'onnx', category: 'mlops-deployment' },
-  'OpenVINO': { folder: 'openvino', category: 'mlops-deployment' }
+const skillFolderOverrides: Record<string, string> = {
+  'C#': 'c-sharp',
+  'C++': 'cpp',
+  '.NET (C#)': 'dotnet-csharp'
 };
 
-const directTechnologyAssets: Record<string, { icon: string; cover: string }> = {
-  'Microsoft Azure': {
-    icon: publicAssetPath('/images/skill/azure-app-service/icon.svg'),
-    cover: publicAssetPath('/images/skill/azure-app-service/cover.png')
-  }
-};
+const skillFolderName = (title: string) =>
+  skillFolderOverrides[title]
+  || title.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+const skillImagePath = (categoryFolder: string, title: string) =>
+  publicAssetPath(`/images/skill/${categoryFolder}/${skillFolderName(title)}/cover.svg`);
 
 type IndividualSkillDetails = {
   summary: string;
@@ -512,24 +512,14 @@ export const individualSkills: Skill[] = skillGroups.flatMap((group) => {
     const details = individualSkillDetails[title];
     const dedicatedSource = sourceSkillsByTitle.get(title);
     const source = dedicatedSource || categorySource;
-    const asset = technologyAssets[title];
-    const directAsset = directTechnologyAssets[title];
-    const assetBase = asset
-      ? publicAssetPath(`/images/skill/${asset.category}/technologies/${asset.folder}`)
-      : undefined;
-    const imageUrl = dedicatedSource?.imageUrl
-      || directAsset?.icon
-      || (assetBase && !asset.coverOnly ? `${assetBase}/icon.png` : categorySource.imageUrl);
-    const thumbnailUrl = dedicatedSource?.thumbnailUrl
-      || directAsset?.cover
-      || (assetBase ? `${assetBase}/cover.png` : categorySource.thumbnailUrl);
+    const imageUrl = skillImagePath(group.folder, title);
 
     return {
       ...source,
       id: nextIndividualSkillId++,
       title,
       imageUrl,
-      thumbnailUrl,
+      thumbnailUrl: imageUrl,
       category: group.category,
       summary: details?.summary
         || dedicatedSource?.summary
