@@ -2,6 +2,7 @@ import Button from '@/components/form/Button';
 import SectionTitle from '@/components/shared/SectionTitle';
 import { FiCoffee } from 'react-icons/fi';
 import { HiOutlineChartBar, HiOutlineFire, HiOutlineUsers } from 'react-icons/hi';
+import ProgressBar from '@/components/shared/ProgressBar';
 
 const AboutSection = () => {
   return (
@@ -27,33 +28,53 @@ const AboutSection = () => {
           </div>
 
           {/* Skills */}
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
-              <h6 className="mb-2 font-semibold">AI & Generative AI</h6>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                LangGraph, LangChain, LangFlow, CrewAI, GPT-5.2, LLMs, RAG, prompt engineering, Hugging Face, LlamaIndex, DeepSeek, Ollama
-              </p>
+          <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Generative AI</h6>
+                <p className="shrink-0">90%</p>
+              </div>
+              <ProgressBar color="blue" progress={90} />
             </div>
 
-            <div className="rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
-              <h6 className="mb-2 font-semibold">Computer Vision & Machine Learning</h6>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                OpenCV, YOLO, PyTorch, TensorFlow Lite, TensorRT, ONNX, OpenVINO, GStreamer, Vision Transformers, GANs, Stable Diffusion, LoRA, Scikit-learn, regression
-              </p>
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Backend</h6>
+                <p className="shrink-0">80%</p>
+              </div>
+              <ProgressBar color="emerald" progress={80} />
             </div>
 
-            <div className="rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
-              <h6 className="mb-2 font-semibold">Cloud, Backend & APIs</h6>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                Azure AI Foundry, Azure Databricks, Azure App Service, AWS, GCP, Python, Flask, FastAPI, C#/.NET, REST APIs, Kubernetes, CUDA
-              </p>
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Natural Language Processing (NLP)</h6>
+                <p className="shrink-0">85%</p>
+              </div>
+              <ProgressBar color="purple" progress={85} />
             </div>
 
-            <div className="rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
-              <h6 className="mb-2 font-semibold">Data, Automation & Applications</h6>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
-                FAISS, Pinecone, Qdrant, Playwright, n8n, Apollo.io, Apify Scraper, synthetic data generation, Flutter, Agiloft CLM, LEAP Gateway
-              </p>
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Image Processing / Computer Vision</h6>
+                <p className="shrink-0">92%</p>
+              </div>
+              <ProgressBar color="amber" progress={92} />
+            </div>
+
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Deep Learning</h6>
+                <p className="shrink-0">88%</p>
+              </div>
+              <ProgressBar color="indigo" progress={88} />
+            </div>
+
+            <div>
+              <div className="mb-3 flex items-start justify-between gap-3">
+                <h6 className="font-semibold">Model Training</h6>
+                <p className="shrink-0">86%</p>
+              </div>
+              <ProgressBar color="rose" progress={86} />
             </div>
           </div>
         </div>
