@@ -16,6 +16,9 @@ const Skillblog = () => {
         Skills
       </PageTitle>
       <div className="container py-10">
+        <p className="mb-8 text-gray-600 dark:text-gray-300">
+          Skills are grouped by area. Experience ranges reflect the roles and projects in my resume; individual tools may have different timelines.
+        </p>
         <div className="grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">
           {skills.map((post) => (
             <Skill
@@ -23,7 +26,7 @@ const Skillblog = () => {
               href={`/skills/${post.id}`}
               thumbnailUrl={post.thumbnailUrl}
               title={post.title}
-              publishedAt={post.publishedAt}
+              experience={post.experience}
             />
           ))}
         </div>

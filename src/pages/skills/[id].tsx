@@ -34,19 +34,19 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
         <div className="my-10">
           <h3 className="text-xl font-semibold">Summary</h3>
           <p className="mt-4">{post.summary}</p>
-          <h3 className="mt-10 text-xl font-semibold">Version</h3>
+          <h3 className="mt-10 text-xl font-semibold">Focus Areas</h3>
           <ul className="mt-4 list-disc pl-4">
             {post.versionlist.map((version, index) => (
               <li key={index}>{version}</li>
             ))}
           </ul>
-          <h3 className="mt-10 text-xl font-semibold">Libraries Used </h3>
+          <h3 className="mt-10 text-xl font-semibold">Skills & Technologies</h3>
           <ul className="mt-4 list-disc pl-4">
             {post.featureslist.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
-          <h3 className="mt-10 text-xl font-semibold">Project List</h3>
+          <h3 className="mt-10 text-xl font-semibold">Relevant Projects</h3>
           <ul className="mt-4 list-disc pl-4">
             {post.projectlist.map((project, index) => (
               <li key={index}>{project}</li>
