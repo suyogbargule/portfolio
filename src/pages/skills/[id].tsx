@@ -1,10 +1,6 @@
 import AppLayout from '@/layouts/AppLayout';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { FiFacebook, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
-import CommentBox from '@/components/partials/CommentBox';
-import RecentComment from '@/components/partials/RecentComment';
 import { Skill } from '@/types';
 import { GetStaticProps } from 'next';
 import { GetStaticPaths } from 'next';
@@ -14,18 +10,13 @@ type Props = {
   post: Skill;
 };
 
-const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
+const SkillDetail: React.FunctionComponent<Props> = ({ post }) => {
 
   return (
-    <AppLayout title="Blog">
+    <AppLayout title={post.title}>
       <div className="container">
         <div className="mt-24 flex flex-col items-center justify-center">
           <h1 className="text-center text-2xl font-semibold sm:text-3xl md:text-4xl">{post.title}</h1>
-          <p className="mt-4 flex items-center text-gray-400">
-            <span>Experience</span>
-            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-primary-500"></span>
-            <span>{post.experience}</span>
-          </p>
           {post.category && (
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
               Category: {post.category}
@@ -39,24 +30,26 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
         <div className="my-10">
           <h3 className="text-xl font-semibold">Summary</h3>
           <p className="mt-4">{post.summary}</p>
-          {post.categoryExperience && (
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-300">
-              Category experience: {post.categoryExperience}
+          {post.category && (
+            <p className="mt-3 text-sm text-gray-500 dark:text-gray-300">
+              Project and version details are included only when they are identified in the shared resume.
             </p>
           )}
-          {post.versionlist.length > 0 && (
-            <>
-              <h3 className="mt-10 text-xl font-semibold">Focus Areas</h3>
-              <ul className="mt-4 list-disc pl-4">
-                {post.versionlist.map((version, index) => (
-                  <li key={index}>{version}</li>
-                ))}
-              </ul>
-            </>
+          <h3 className="mt-10 text-xl font-semibold">Versions / Implementation Details</h3>
+          {post.versionlist.length > 0 ? (
+            <ul className="mt-4 list-disc pl-4">
+              {post.versionlist.map((version, index) => (
+                <li key={index}>{version}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              No specific version or implementation detail is stated in the shared resume for this skill.
+            </p>
           )}
           {post.featureslist.length > 0 && (
             <>
-              <h3 className="mt-10 text-xl font-semibold">Skills & Technologies</h3>
+              <h3 className="mt-10 text-xl font-semibold">Related Skills & Technologies</h3>
               <ul className="mt-4 list-disc pl-4">
                 {post.featureslist.map((feature, index) => (
                   <li key={index}>{feature}</li>
@@ -64,15 +57,17 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
               </ul>
             </>
           )}
-          {post.projectlist.length > 0 && (
-            <>
-              <h3 className="mt-10 text-xl font-semibold">Relevant Projects</h3>
-              <ul className="mt-4 list-disc pl-4">
-                {post.projectlist.map((project, index) => (
-                  <li key={index}>{project}</li>
-                ))}
-              </ul>
-            </>
+          <h3 className="mt-10 text-xl font-semibold">Used In Projects</h3>
+          {post.projectlist.length > 0 ? (
+            <ul className="mt-4 list-disc pl-4">
+              {post.projectlist.map((project, index) => (
+                <li key={index}>{project}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
+              The shared resume does not identify a specific project using this skill.
+            </p>
           )}
         </div>
       </div>
@@ -80,7 +75,6 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
   );
 };
 
-// Fetching paths for dynamic routes
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = allSkills.map((skill) => ({
     params: { id: skill.id.toString() },
@@ -92,7 +86,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-// Fetching data for each work detail
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string;
   const skill = allSkills.find((skill) => skill.id === Number(id));
@@ -105,9 +98,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
     props: {
-      post: skill,  // Change 'skill' to 'post'
+      post: skill,
     },
   };
 };
 
-export default BlogSingle;
+export default SkillDetail;

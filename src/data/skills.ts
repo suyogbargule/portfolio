@@ -18,7 +18,6 @@ export const skills: Skill[] = [
       'Private, locally hosted AI chatbot',
       'AI-powered lead generation'
     ],
-    experience: '3+ years in applied AI; model-specific experience varies',
     versionlist: [
       'Large Language Models (LLMs)',
       'Generative AI and Agentic AI',
@@ -32,7 +31,7 @@ export const skills: Skill[] = [
       'LLaMA, DeepSeek, Ollama',
       'Stable Diffusion'
     ],
-    summary: 'Builds practical generative AI solutions, including locally hosted chatbots, agentic automation, and contract analysis workflows. The stated experience reflects applied AI work across roles; individual models and tools have different adoption timelines.',
+    summary: 'Builds practical generative AI solutions, including locally hosted chatbots, agentic automation, and contract analysis workflows.',
     content: ''
   },
   {
@@ -48,7 +47,6 @@ export const skills: Skill[] = [
       'Agentic AI lead generation system',
       'AI chatbot workflows'
     ],
-    experience: '2+ years across AI workflow development; framework-specific time varies',
     versionlist: [
       'Multi-agent systems',
       'Agent orchestration and workflow design',
@@ -78,7 +76,6 @@ export const skills: Skill[] = [
       'Patient treatment-record retrieval and summarization',
       'RAG-based AI applications'
     ],
-    experience: 'RAG project experience documented in 2025–2026; individual database durations are not specified',
     versionlist: [
       'Vector search',
       'Semantic search',
@@ -90,7 +87,7 @@ export const skills: Skill[] = [
       'Pinecone',
       'Qdrant'
     ],
-    summary: 'Builds retrieval workflows that connect language models with relevant source information. Resume projects include RAG pipelines for retrieving and summarizing patient treatment records; exact hands-on duration for each vector database is not stated.',
+    summary: 'Builds retrieval workflows that connect language models with relevant source information. Resume projects include RAG pipelines for retrieving and summarizing patient treatment records; the resume does not name a vector database for that project.',
     content: ''
   },
   {
@@ -107,7 +104,6 @@ export const skills: Skill[] = [
       'Assistive AI for visually impaired users',
       'Panoramic and low-light CCTV imaging'
     ],
-    experience: '3 years (Oct 2022–Aug 2025)',
     versionlist: [
       'Object detection and image segmentation',
       'Face recognition and OCR',
@@ -120,7 +116,7 @@ export const skills: Skill[] = [
       'YOLO v5, v7, v8, v11',
       'GStreamer'
     ],
-    summary: 'Develops computer vision systems for traffic monitoring, face recognition, assistive applications, and CCTV imaging. The listed experience range is based on the Futops Technologies role dates; time with individual libraries and model versions varies.',
+    summary: 'Develops computer vision systems for traffic monitoring, face recognition, assistive applications, and CCTV imaging.',
     content: ''
   },
   {
@@ -137,7 +133,6 @@ export const skills: Skill[] = [
       'Traffic and face analytics models',
       'Real-time assistive AI system'
     ],
-    experience: '4+ years across AI/ML roles (2021–2025)',
     versionlist: [
       'Convolutional Neural Networks (CNNs)',
       'Generative Adversarial Networks (GANs)',
@@ -169,7 +164,6 @@ export const skills: Skill[] = [
       'Insurance claim document classification',
       'Treatment-record summarization'
     ],
-    experience: '2+ years across language-model and document-AI projects; specific techniques vary',
     versionlist: [
       'Text classification and document classification',
       'Information extraction',
@@ -181,7 +175,7 @@ export const skills: Skill[] = [
       'LangChain',
       'LLM-based document processing'
     ],
-    summary: 'Applies NLP and language models to extract information from contracts, classify insurance documents, and summarize treatment records. Experience is based on project timelines, rather than a separate duration for each NLP technique.',
+    summary: 'Applies NLP and language models to extract information from contracts, classify insurance documents, and summarize treatment records.',
     content: ''
   },
   {
@@ -197,7 +191,6 @@ export const skills: Skill[] = [
       'Computer vision applications',
       'Mobile and backend integrations'
     ],
-    experience: '4+ years in Python; experience with other languages varies',
     versionlist: [
       'Application development',
       'Machine learning and data processing',
@@ -210,7 +203,7 @@ export const skills: Skill[] = [
       'JavaScript',
       'SQL'
     ],
-    summary: 'Uses programming languages to build AI services, computer vision systems, automation workflows, and application integrations. Python is the primary language in the documented experience; separate durations for the other listed languages are not specified.',
+    summary: 'Uses programming languages to build AI services, computer vision systems, automation workflows, and application integrations. Python is the primary language in the documented projects.',
     content: ''
   },
   {
@@ -226,7 +219,6 @@ export const skills: Skill[] = [
       'FastAPI AI services for dental workflows',
       'Python and .NET application integrations'
     ],
-    experience: 'Documented across roles from 2025–present; exact duration varies by technology',
     versionlist: [
       'Microservices architecture',
       'API development',
@@ -256,7 +248,6 @@ export const skills: Skill[] = [
     projectlist: [
       'Database-backed AI and application workflows'
     ],
-    experience: 'Database names are listed in the skills profile; per-database durations are not specified',
     versionlist: [
       'Relational data',
       'Document data',
@@ -283,7 +274,6 @@ export const skills: Skill[] = [
       'Azure Databricks contract analysis platform',
       'Cloud-native AI applications'
     ],
-    experience: '3 years of AWS-related project work (2022–2025); Azure work began in 2026; per-service and GCP durations are unspecified',
     versionlist: [
       'Cloud-native application deployment',
       'Managed AI and data services',
@@ -295,7 +285,7 @@ export const skills: Skill[] = [
       'AWS Bedrock',
       'Google Cloud Platform (GCP)'
     ],
-    summary: 'Builds and deploys AI applications on cloud platforms. Project experience includes an AWS-based assistive AI system and an Azure-hosted contract analysis platform. AWS Bedrock and GCP are included in the skills profile, but the resume does not identify project-specific details or durations for them; Azure services are described individually.',
+    summary: 'Builds and deploys AI applications on cloud platforms. Project examples include an AWS-based assistive AI system and an Azure-hosted contract analysis platform. AWS Bedrock and GCP are included in the skills profile, but the resume does not identify project-specific usage for them; Azure services are described individually.',
     content: ''
   },
   {
@@ -311,7 +301,6 @@ export const skills: Skill[] = [
       'Kubernetes-deployed AI services',
       'Cloud-hosted AI microservices'
     ],
-    experience: '2–3 years in model optimization and deployment tooling; container tool durations vary',
     versionlist: [
       'Model optimization',
       'Edge AI deployment',
@@ -326,7 +315,7 @@ export const skills: Skill[] = [
       'OpenVINO',
       'CUDA'
     ],
-    summary: 'Optimizes and deploys machine learning models across cloud and edge environments. The resume documents ONNX, TensorRT, OpenVINO, and CUDA in computer vision work, as well as Kubernetes in AI service deployment; experience varies by tool.',
+    summary: 'Optimizes and deploys machine learning models across cloud and edge environments. The resume documents ONNX, TensorRT, OpenVINO, and CUDA in computer vision work, as well as Kubernetes in AI service deployment; individual tool versions are not specified.',
     content: ''
   },
   {
@@ -340,7 +329,6 @@ export const skills: Skill[] = [
     projectlist: [
       'Development and deployment of AI applications'
     ],
-    experience: 'Tools are listed in the skills profile; individual durations are not specified',
     versionlist: [
       'Source control',
       'Development environments',
@@ -352,7 +340,7 @@ export const skills: Skill[] = [
       'Linux',
       'Visual Studio Code'
     ],
-    summary: 'Uses source control, Linux, and development tools as part of software and AI project workflows. The supplied resume does not provide per-tool experience dates.',
+    summary: 'Uses source control, Linux, and development tools as part of software and AI project workflows. The supplied resume does not provide project-specific usage for each tool.',
     content: ''
   },
   {
@@ -369,7 +357,6 @@ export const skills: Skill[] = [
       'Traffic surveillance and violation detection',
       'Assistive AI for visually impaired users'
     ],
-    experience: '3 years in traffic and intelligent transportation work (2022–2025); other domains from 2025–present',
     versionlist: [
       'Contract Lifecycle Management (CLM) and Legal AI',
       'Healthcare and dental automation',
@@ -383,7 +370,7 @@ export const skills: Skill[] = [
       'Traffic violation detection',
       'Enterprise workflow integration'
     ],
-    summary: 'Applies AI to legal contract review, healthcare and dental workflows, insurance claims, traffic management, and enterprise automation. The duration reflects the dates of documented projects; legal and healthcare work is more recent than traffic surveillance.',
+    summary: 'Applies AI to legal contract review, healthcare and dental workflows, insurance claims, traffic management, and enterprise automation.',
     content: ''
   },
   {
@@ -397,7 +384,6 @@ export const skills: Skill[] = [
     projectlist: [
       'AI-driven contract risk analysis platform'
     ],
-    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
     versionlist: [
       'Deploy Flask-based REST API microservices',
       'Expose AI-generated assessments and agent outputs'
@@ -422,7 +408,6 @@ export const skills: Skill[] = [
     projectlist: [
       'AI-driven contract risk analysis platform'
     ],
-    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
     versionlist: [
       'Parallel GPT-5.2 processing across LangGraph agents',
       'LLM-based contract clause analysis'
@@ -447,7 +432,6 @@ export const skills: Skill[] = [
     projectlist: [
       'AI-driven contract risk analysis platform'
     ],
-    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
     versionlist: [
       'Run a LangGraph multi-agent contract analysis system',
       'Process contract PDFs and generate legal risk assessments'

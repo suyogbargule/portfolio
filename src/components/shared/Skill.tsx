@@ -7,11 +7,10 @@ import classNames from 'classnames';
 type Props = {
   thumbnailUrl: string;
   title: string;
-  experience: string;
   href: string;
 };
 
-const Skill = ({ thumbnailUrl, title, experience, href }: Props) => {
+const Skill = ({ thumbnailUrl, title, href }: Props) => {
   return (
     <div className={classNames(styles['post'], 'bg-white dark:bg-gray-700')}>
       <Link href={href}>
@@ -23,7 +22,6 @@ const Skill = ({ thumbnailUrl, title, experience, href }: Props) => {
         <Link href={href}>
           <a className="block text-xl font-semibold hover:text-primary-500 hover:underline">{title}</a>
         </Link>
-        <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">{experience}</p>
       </div>
     </div>
   );
