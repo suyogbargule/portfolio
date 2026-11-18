@@ -53,6 +53,8 @@ export type Skill = {
   versionlist: string[];
   featureslist: string[];
   summary: string;
+  category?: string;
+  categoryExperience?: string;
 };
 
 export type Post = {

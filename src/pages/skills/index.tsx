@@ -1,7 +1,6 @@
 import PageTitle from '@/components/shared/PageTitle';
-import Pagination from '@/components/shared/Pagination';
 import Skill from '@/components/shared/Skill';
-import { skills } from '@/data/skills';
+import { individualSkills, skillCategories } from '@/data/individualSkills';
 import AppLayout from '@/layouts/AppLayout';
 
 const Skillblog = () => {
@@ -17,19 +16,33 @@ const Skillblog = () => {
       </PageTitle>
       <div className="container py-10">
         <p className="mb-8 text-gray-600 dark:text-gray-300">
-          Skills are grouped by area. Experience ranges reflect the roles and projects in my resume; individual tools may have different timelines.
+          Each listed technology or skill has its own card. Experience reflects the relevant role or project category; individual tool durations are shown only when stated in the resume.
         </p>
-        <div className="grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">
-          {skills.map((post) => (
-            <Skill
-              key={post.id}
-              href={`/skills/${post.id}`}
-              thumbnailUrl={post.thumbnailUrl}
-              title={post.title}
-              experience={post.experience}
-            />
-          ))}
-        </div>
+        {skillCategories.map((category) => {
+          const categorySkills = individualSkills.filter((skill) => skill.category === category);
+
+          return (
+            <section key={category} className="mb-14 last:mb-0">
+              <h2 className="mb-6 text-2xl font-semibold">{category}</h2>
+              {categorySkills[0]?.categoryExperience && (
+                <p className="mb-6 text-sm text-gray-600 dark:text-gray-300">
+                  Category experience: {categorySkills[0].categoryExperience}
+                </p>
+              )}
+              <div className="grid gap-8 sm:gap-4 md:grid-cols-3 lg:gap-8">
+                {categorySkills.map((skill) => (
+                  <Skill
+                    key={skill.id}
+                    href={`/skills/${skill.id}`}
+                    thumbnailUrl={skill.thumbnailUrl}
+                    title={skill.title}
+                    experience={skill.experience}
+                  />
+                ))}
+              </div>
+            </section>
+          );
+        })}
       </div>
     </AppLayout>
   );

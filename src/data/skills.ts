@@ -1,6 +1,7 @@
 import { Skill } from '@/types';
 
-const skillImage = (skill: string, image: 'icon' | 'cover') => `/images/skill/${skill}/${image}.png`;
+const skillImage = (skill: string, image: 'icon' | 'cover', extension: 'png' | 'svg' = 'png') =>
+  `/images/skill/${skill}/${image}.${extension}`;
 
 export const skills: Skill[] = [
   {
@@ -289,14 +290,11 @@ export const skills: Skill[] = [
     ],
     featureslist: [
       'Microsoft Azure',
-      'Azure Databricks',
-      'Azure App Service',
-      'Azure AI Foundry',
       'Amazon Web Services (AWS)',
       'AWS Bedrock',
       'Google Cloud Platform (GCP)'
     ],
-    summary: 'Builds and deploys AI applications on cloud platforms. Project experience includes an AWS-based assistive AI system and a contract analysis platform using Azure Databricks, Azure AI Foundry, and Azure App Service. AWS Bedrock is included in the skills profile, but the resume does not identify a specific Bedrock project or duration; GCP duration is also unspecified.',
+    summary: 'Builds and deploys AI applications on cloud platforms. Project experience includes an AWS-based assistive AI system and an Azure-hosted contract analysis platform. AWS Bedrock and GCP are included in the skills profile, but the resume does not identify project-specific details or durations for them; Azure services are described individually.',
     content: ''
   },
   {
@@ -385,6 +383,81 @@ export const skills: Skill[] = [
       'Enterprise workflow integration'
     ],
     summary: 'Applies AI to legal contract review, healthcare and dental workflows, insurance claims, traffic management, and enterprise automation. The duration reflects the dates of documented projects; legal and healthcare work is more recent than traffic surveillance.',
+    content: ''
+  },
+  {
+    id: 14,
+    title: 'Azure App Service',
+    publishedAt: 'November 2026',
+    thumbnailUrl: skillImage('azure-app-service', 'cover'),
+    imageUrl: skillImage('azure-app-service', 'icon', 'svg'),
+    authorName: 'Suyog Bargule',
+    library: '',
+    projectlist: [
+      'AI-driven contract risk analysis platform'
+    ],
+    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
+    versionlist: [
+      'Deploy Flask-based REST API microservices',
+      'Expose AI-generated assessments and agent outputs'
+    ],
+    featureslist: [
+      'Azure App Service',
+      'Flask',
+      'REST APIs',
+      'Microservices deployment'
+    ],
+    summary: 'Deployed Flask-based REST API microservices to Azure App Service to expose AI-generated contract risk assessments and agent outputs.',
+    content: ''
+  },
+  {
+    id: 15,
+    title: 'Azure AI Foundry',
+    publishedAt: 'November 2026',
+    thumbnailUrl: skillImage('azure-ai-foundry', 'cover'),
+    imageUrl: skillImage('azure-ai-foundry', 'icon', 'svg'),
+    authorName: 'Suyog Bargule',
+    library: '',
+    projectlist: [
+      'AI-driven contract risk analysis platform'
+    ],
+    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
+    versionlist: [
+      'Parallel GPT-5.2 processing across LangGraph agents',
+      'LLM-based contract clause analysis'
+    ],
+    featureslist: [
+      'Azure AI Foundry',
+      'GPT-5.2',
+      'LangGraph',
+      'Parallel LLM processing'
+    ],
+    summary: 'Used Azure AI Foundry to run parallel GPT-5.2 processing across LangGraph agents analyzing contract clauses and generating risk assessments.',
+    content: ''
+  },
+  {
+    id: 16,
+    title: 'Azure Databricks',
+    publishedAt: 'November 2026',
+    thumbnailUrl: skillImage('azure-databricks', 'cover'),
+    imageUrl: skillImage('azure-databricks', 'icon', 'svg'),
+    authorName: 'Suyog Bargule',
+    library: '',
+    projectlist: [
+      'AI-driven contract risk analysis platform'
+    ],
+    experience: 'Used in the 2026 contract analysis project; exact service-specific duration is not specified',
+    versionlist: [
+      'Run a LangGraph multi-agent contract analysis system',
+      'Process contract PDFs and generate legal risk assessments'
+    ],
+    featureslist: [
+      'Azure Databricks',
+      'Python',
+      'LangGraph',
+      'Contract PDF processing'
+    ],
+    summary: 'Built and ran a LangGraph multi-agent contract risk analysis platform on Azure Databricks, automating contract PDF processing and legal risk assessment.',
     content: ''
   }
 ];

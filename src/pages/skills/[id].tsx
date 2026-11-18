@@ -8,7 +8,7 @@ import RecentComment from '@/components/partials/RecentComment';
 import { Skill } from '@/types';
 import { GetStaticProps } from 'next';
 import { GetStaticPaths } from 'next';
-import { skills } from '@/data/skills';
+import { allSkills } from '@/data/individualSkills';
 
 type Props = {
   post: Skill;
@@ -26,6 +26,11 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
             <span className="mx-2 h-1.5 w-1.5 rounded-full bg-primary-500"></span>
             <span>{post.experience}</span>
           </p>
+          {post.category && (
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+              Category: {post.category}
+            </p>
+          )}
         </div>
         <div className="relative mt-10 h-64 overflow-hidden rounded-xl bg-gray-50 sm:h-80 md:h-96">
           <Image src={post.imageUrl} layout="fill" objectFit="contain" alt={`${post.title} logo`} />
@@ -34,24 +39,41 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
         <div className="my-10">
           <h3 className="text-xl font-semibold">Summary</h3>
           <p className="mt-4">{post.summary}</p>
-          <h3 className="mt-10 text-xl font-semibold">Focus Areas</h3>
-          <ul className="mt-4 list-disc pl-4">
-            {post.versionlist.map((version, index) => (
-              <li key={index}>{version}</li>
-            ))}
-          </ul>
-          <h3 className="mt-10 text-xl font-semibold">Skills & Technologies</h3>
-          <ul className="mt-4 list-disc pl-4">
-            {post.featureslist.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
-          <h3 className="mt-10 text-xl font-semibold">Relevant Projects</h3>
-          <ul className="mt-4 list-disc pl-4">
-            {post.projectlist.map((project, index) => (
-              <li key={index}>{project}</li>
-            ))}
-          </ul>
+          {post.categoryExperience && (
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-300">
+              Category experience: {post.categoryExperience}
+            </p>
+          )}
+          {post.versionlist.length > 0 && (
+            <>
+              <h3 className="mt-10 text-xl font-semibold">Focus Areas</h3>
+              <ul className="mt-4 list-disc pl-4">
+                {post.versionlist.map((version, index) => (
+                  <li key={index}>{version}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {post.featureslist.length > 0 && (
+            <>
+              <h3 className="mt-10 text-xl font-semibold">Skills & Technologies</h3>
+              <ul className="mt-4 list-disc pl-4">
+                {post.featureslist.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {post.projectlist.length > 0 && (
+            <>
+              <h3 className="mt-10 text-xl font-semibold">Relevant Projects</h3>
+              <ul className="mt-4 list-disc pl-4">
+                {post.projectlist.map((project, index) => (
+                  <li key={index}>{project}</li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </div>
     </AppLayout>
@@ -60,7 +82,7 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
 
 // Fetching paths for dynamic routes
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = skills.map((skill) => ({
+  const paths = allSkills.map((skill) => ({
     params: { id: skill.id.toString() },
   }));
 
@@ -73,7 +95,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // Fetching data for each work detail
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string;
-  const skill = skills.find((skill) => skill.id === Number(id));
+  const skill = allSkills.find((skill) => skill.id === Number(id));
 
   if (!skill) {
     return {
