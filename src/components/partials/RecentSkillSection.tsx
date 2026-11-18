@@ -15,7 +15,7 @@ const SkillSection = () => {
               href={`/skills/${skill.id}`}
               thumbnailUrl={skill.thumbnailUrl}
               title={skill.title}
-              publishedAt={skill.publishedAt}
+              experience={skill.experience}
             />
           ))}
       </div>
