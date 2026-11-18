@@ -6,13 +6,17 @@
   }
 
   &-image {
+    @apply relative block overflow-hidden bg-gray-50;
+    aspect-ratio: 4 / 3;
+
     img {
       @apply transform transition-transform duration-300;
+      padding: 1rem;
     }
 
     &:hover {
       img {
-        @apply scale-110;
+        @apply scale-105;
       }
     }
   }

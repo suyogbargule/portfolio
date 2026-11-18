@@ -27,8 +27,8 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
             <span>{post.experience}</span>
           </p>
         </div>
-        <div className="mt-10 overflow-hidden rounded-xl">
-          <Image src={post.imageUrl} height={720} width={1280} layout="responsive" alt={post.title} />
+        <div className="relative mt-10 h-64 overflow-hidden rounded-xl bg-gray-50 sm:h-80 md:h-96">
+          <Image src={post.imageUrl} layout="fill" objectFit="contain" alt={`${post.title} logo`} />
         </div>
 
         <div className="my-10">

@@ -1,14 +1,14 @@
 import { Skill } from '@/types';
 
-const skillImage = (filename: string) => `/images/skill/${filename}`;
+const skillImage = (skill: string, image: 'icon' | 'cover') => `/images/skill/${skill}/${image}.png`;
 
 export const skills: Skill[] = [
   {
     id: 1,
     title: 'Generative AI & LLMs',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('ollama_icon_image.png'),
-    imageUrl: skillImage('ollama_page_image.png'),
+    thumbnailUrl: skillImage('generative-ai', 'cover'),
+    imageUrl: skillImage('generative-ai', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -37,8 +37,8 @@ export const skills: Skill[] = [
     id: 2,
     title: 'Agent Frameworks & Orchestration',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('langgraph_icon_image.png'),
-    imageUrl: skillImage('langgraph_page_image.png'),
+    thumbnailUrl: skillImage('agent-frameworks', 'cover'),
+    imageUrl: skillImage('agent-frameworks', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -68,8 +68,8 @@ export const skills: Skill[] = [
     id: 3,
     title: 'Vector Databases & Retrieval',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('langchain_icon_image.png'),
-    imageUrl: skillImage('langchain_page_image.png'),
+    thumbnailUrl: skillImage('vector-retrieval', 'cover'),
+    imageUrl: skillImage('vector-retrieval', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -95,8 +95,8 @@ export const skills: Skill[] = [
     id: 4,
     title: 'Computer Vision',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('opencv_icon_image.png'),
-    imageUrl: skillImage('opencv_page_image.png'),
+    thumbnailUrl: skillImage('computer-vision', 'cover'),
+    imageUrl: skillImage('computer-vision', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -125,8 +125,8 @@ export const skills: Skill[] = [
     id: 5,
     title: 'Machine Learning & Deep Learning',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('pytorch_icon_image.png'),
-    imageUrl: skillImage('pytorch_page_image.png'),
+    thumbnailUrl: skillImage('machine-learning', 'cover'),
+    imageUrl: skillImage('machine-learning', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -158,8 +158,8 @@ export const skills: Skill[] = [
     id: 6,
     title: 'Natural Language Processing',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('langchain_icon_image.png'),
-    imageUrl: skillImage('langchain_page_image.png'),
+    thumbnailUrl: skillImage('nlp', 'cover'),
+    imageUrl: skillImage('nlp', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -186,8 +186,8 @@ export const skills: Skill[] = [
     id: 7,
     title: 'Programming Languages',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('python_icon_image.png'),
-    imageUrl: skillImage('python_page_image.png'),
+    thumbnailUrl: skillImage('programming-languages', 'cover'),
+    imageUrl: skillImage('programming-languages', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -215,8 +215,8 @@ export const skills: Skill[] = [
     id: 8,
     title: 'Backend & Integration',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('python_icon_image.png'),
-    imageUrl: skillImage('python_page_image.png'),
+    thumbnailUrl: skillImage('backend-integration', 'cover'),
+    imageUrl: skillImage('backend-integration', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -247,8 +247,8 @@ export const skills: Skill[] = [
     id: 9,
     title: 'Databases',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('postgresql_icon_image.png'),
-    imageUrl: skillImage('postgresql_icon_image.png'),
+    thumbnailUrl: skillImage('databases', 'cover'),
+    imageUrl: skillImage('databases', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -272,8 +272,8 @@ export const skills: Skill[] = [
     id: 10,
     title: 'Cloud Platforms',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('aws_ec2_instance_icon_image.png'),
-    imageUrl: skillImage('aws_ec2_instance_page_image.png'),
+    thumbnailUrl: skillImage('cloud-platforms', 'cover'),
+    imageUrl: skillImage('cloud-platforms', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -302,8 +302,8 @@ export const skills: Skill[] = [
     id: 11,
     title: 'MLOps & Deployment',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('docker_icon_image.png'),
-    imageUrl: skillImage('docker_page_image.png'),
+    thumbnailUrl: skillImage('mlops-deployment', 'cover'),
+    imageUrl: skillImage('mlops-deployment', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -333,8 +333,8 @@ export const skills: Skill[] = [
     id: 12,
     title: 'Development Tools',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('linux_icon_image.png'),
-    imageUrl: skillImage('linux_page_image.png'),
+    thumbnailUrl: skillImage('developer-tools', 'cover'),
+    imageUrl: skillImage('developer-tools', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [
@@ -359,8 +359,8 @@ export const skills: Skill[] = [
     id: 13,
     title: 'Domain Expertise',
     publishedAt: 'November 2026',
-    thumbnailUrl: '/images/services/artificial-intelligence.png',
-    imageUrl: '/images/works/traffic_management_system.png',
+    thumbnailUrl: skillImage('domain-expertise', 'cover'),
+    imageUrl: skillImage('domain-expertise', 'icon'),
     authorName: 'Suyog Bargule',
     library: '',
     projectlist: [

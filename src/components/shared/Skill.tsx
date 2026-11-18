@@ -16,7 +16,7 @@ const Skill = ({ thumbnailUrl, title, experience, href }: Props) => {
     <div className={classNames(styles['post'], 'bg-white dark:bg-gray-700')}>
       <Link href={href}>
         <a className={styles['post-image']}>
-          <Image src={thumbnailUrl} height={384} width={512} layout="responsive" alt={title} />
+          <Image src={thumbnailUrl} layout="fill" objectFit="contain" alt={`${title} illustration`} />
         </a>
       </Link>
       <div className="p-6">
