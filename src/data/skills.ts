@@ -415,7 +415,7 @@ export const skills: Skill[] = [
     id: 15,
     title: 'Azure AI Foundry',
     publishedAt: 'November 2026',
-    thumbnailUrl: skillImage('azure-ai-foundry', 'cover'),
+    thumbnailUrl: skillImage('azure-ai-foundry', 'icon', 'svg'),
     imageUrl: skillImage('azure-ai-foundry', 'icon', 'svg'),
     authorName: 'Suyog Bargule',
     library: '',
