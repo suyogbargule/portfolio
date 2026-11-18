@@ -281,7 +281,7 @@ export const skills: Skill[] = [
       'Azure Databricks contract analysis platform',
       'Cloud-native AI applications'
     ],
-    experience: '3 years AWS-related project work (2022–2025); Azure work began in 2026; GCP duration is unspecified',
+    experience: '3 years of AWS-related project work (2022–2025); Azure work began in 2026; per-service and GCP durations are unspecified',
     versionlist: [
       'Cloud-native application deployment',
       'Managed AI and data services',
@@ -293,9 +293,10 @@ export const skills: Skill[] = [
       'Azure App Service',
       'Azure AI Foundry',
       'Amazon Web Services (AWS)',
+      'AWS Bedrock',
       'Google Cloud Platform (GCP)'
     ],
-    summary: 'Builds and deploys AI applications on cloud platforms. Project experience includes an AWS-based assistive AI system and a contract analysis platform using Azure Databricks, Azure AI Foundry, and Azure App Service. The resume does not specify the duration of GCP use.',
+    summary: 'Builds and deploys AI applications on cloud platforms. Project experience includes an AWS-based assistive AI system and a contract analysis platform using Azure Databricks, Azure AI Foundry, and Azure App Service. AWS Bedrock is included in the skills profile, but the resume does not identify a specific Bedrock project or duration; GCP duration is also unspecified.',
     content: ''
   },
   {
